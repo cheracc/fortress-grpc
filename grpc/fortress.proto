@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+option go_package = "github.com/cheracc/fortress-grpc/grpc";
+
+package grpc;
+
+service Auth {
+    rpc Authorize(PlayerInfo) returns (AuthInfo) {}
+}
+
+service Command {
+    rpc Command(CommandInfo) returns (CommandReturn) {}
+}
+
+service Player {
+    rpc GetPlayerData(PlayerInfo) returns (PlayerMessage) {}
+}
+
+service Chat {
+    rpc JoinChannel(ChatRequest) returns (stream ChatMessage) {}
+    rpc SendMessage(ChatMessage) returns (Empty) {}
+}
+
+message Empty {}
+
+message PlayerInfo {
+    string id = 1;
+    string sessionToken = 2;
+}
+
+message AuthInfo {
+    string playerID = 1;
+    string sessionToken = 2;
+    string loginURL = 3;
+}
+
+message CommandInfo {
+    PlayerInfo playerInfo = 1;
+    string commandName = 2;
+    string commandArguments = 3;
+}
+
+message CommandReturn {
+    bool success = 1;
+    string jsonPayload = 2;
+}
+
+message PlayerMessage {
+    string playerId = 1;
+    string name = 2;
+    int64 createdAt = 3;
+}
+
+message ChatRequest {
+    string sessionToken = 1;
+    string channelName = 2;
+}
+
+message ChatMessage {
+    string sessionToken = 1;
+    string message = 2;
+    string channelName = 3;
+    string sendingPlayerName = 4;
+}

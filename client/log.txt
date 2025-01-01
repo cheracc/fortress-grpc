@@ -1,0 +1,1096 @@
+2024/12/31 08:44:31 [INFO]  New Logger started at 2024-12-31 08:44:31.7683713 -0500 EST m=+0.006376801
+2024/12/31 08:44:31 [INFO]  > 
+2024/12/31 08:44:31 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Dn218SAVArAzNZ7vIbh5ew%3D%3D
+2024/12/31 08:44:36 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:44:41 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:44:46 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:44:51 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:44:56 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:01 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:06 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:11 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:16 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:21 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:26 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:31 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:36 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:41 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:46 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:51 [INFO]  Obtained new session token: Dn218SAVArAzNZ7vIbh5ew==
+2024/12/31 08:45:52 [INFO]  Sending command to server:  
+2024/12/31 08:46:03 [INFO]  New Logger started at 2024-12-31 08:46:03.1359312 -0500 EST m=+0.007237601
+2024/12/31 08:46:03 [INFO]  > 
+2024/12/31 08:46:03 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=yX4N85ZTZUCFfTLNdZwUyA%3D%3D
+2024/12/31 08:46:08 [INFO]  Obtained new session token: yX4N85ZTZUCFfTLNdZwUyA==
+2024/12/31 08:46:13 [INFO]  Obtained new session token: yX4N85ZTZUCFfTLNdZwUyA==
+2024/12/31 08:46:18 [INFO]  Obtained new session token: yX4N85ZTZUCFfTLNdZwUyA==
+2024/12/31 08:46:23 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMwODJ9.oJicVH5kvhMPH-UbBZqbAyOC6bQmcrTJ2eByXeneiwV6YNLmfLXq3M6WJH9PpQQNDhoeuZ-f4UBlm2ZeUyq-OA
+2024/12/31 08:46:56 [INFO]  Sending command to server:  
+2024/12/31 08:47:01 [INFO]  New Logger started at 2024-12-31 08:47:01.9024841 -0500 EST m=+0.006365101
+2024/12/31 08:47:01 [INFO]  > 
+2024/12/31 08:47:01 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=wLMUi0jMgATF3z6aHk0YMQ%3D%3D
+
+2024/12/31 08:47:06 [INFO]  Obtained new session token: wLMUi0jMgATF3z6aHk0YMQ==
+2024/12/31 08:47:11 [INFO]  Obtained new session token: wLMUi0jMgATF3z6aHk0YMQ==
+2024/12/31 08:47:16 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMxMzZ9.WNQxtsdWqg84waQAdoxPI6Q48M4L95yJr-tKM425xQURhElQbhHaL-CMgPACoPX7R7-PldUMcp6LSAuzAH51UQ
+2024/12/31 08:48:16 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMxOTZ9.g2HuIA8k0DTC0y_gvlj3ZexhCmbx-6ulFsLj6VIkIexEk2SHnGnkUqodEcijVuIydpNxkeIUXZsKK8R3XpnJWw
+2024/12/31 08:49:17 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMyNTd9.jWLOvBNRipGh1AbsYDAzC7ECmccKNjaT88EeiC6WVrB2OSHoi4VdKggEH6bA7Phb-NTGpjkQ-Cd5gvkSBaNwuA
+2024/12/31 08:50:17 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMzMTd9.cuTzz95iUV2A3QleAqH6qKMCy3f6lbdRc_9strID7spqdOM3JeuHPNbUCBeA2ygfvCmvyzurCg_mwlKbNXq3tA
+2024/12/31 08:51:17 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTMzNzd9.qR8FjpKE_BtUiemwB7zC0BcU6MhLNP5qGLsVJLwjjj4hlVBrnQ2w8byDf29y08f2eaAjT73yGPcsE1CQ76iaXA
+2024/12/31 08:52:17 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTM0Mzd9.wvxPWh94x5_nTEaGOmZys4kPeEm1Ap36wE-reLtbB5kUhlHneRd-oy308OogbFjgh9ZO7GsjUBw-5JUsCFj4Yw
+2024/12/31 08:53:17 [INFO]  Obtained new session token: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU2NTM0OTd9.waMo-hZb7QVtyUuNLRhYJSqxXaWwPS4g89A4rMShQhMSPI9KHc0egELvSvh2nbYaagjBL5qAZPBqhQhDv29W7A
+2024/12/31 08:53:22 [INFO]  Sending command to server:  
+2024/12/31 08:53:28 [INFO]  New Logger started at 2024-12-31 08:53:28.0936504 -0500 EST m=+0.006378801
+2024/12/31 08:53:28 [INFO]  > 
+2024/12/31 08:53:28 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=zUskw_jlHgAEdq8EMdHsfg%3D%3D
+
+2024/12/31 08:53:48 [INFO]  Logged in as (7be71aea-0355-4851-8608-e86e48db3158) GoogleId: 
+2024/12/31 08:54:47 [INFO]  Sending command to server: name turdburglar
+2024/12/31 08:54:47 [INFO]  > 
+2024/12/31 08:56:54 [INFO]  Sending command to server: name cheracc
+2024/12/31 08:56:54 [INFO]  > 
+2024/12/31 09:00:08 [INFO]  Sending command to server: stop 
+2024/12/31 09:00:08 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:60855->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/12/31 09:00:08 [INFO]  > 
+2024/12/31 09:00:48 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 09:01:23 [INFO]  Sending command to server:  
+2024/12/31 09:01:46 [INFO]  New Logger started at 2024-12-31 09:01:46.1931508 -0500 EST m=+0.006404601
+2024/12/31 09:01:46 [INFO]  > 
+2024/12/31 09:01:46 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=dHa0a7p4EJQS0WbZuPH24Q%3D%3D
+
+2024/12/31 09:02:11 [INFO]  Logged in as (1aec6767-2c2f-4d0c-9674-9b6c21ff159d) GoogleId: 
+2024/12/31 09:02:20 [INFO]  Sending command to server: hi 
+2024/12/31 09:02:20 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:60968->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/12/31 09:02:20 [INFO]  > 
+2024/12/31 09:03:11 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 09:04:11 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 09:05:11 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 09:06:11 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 09:06:50 [INFO]  Sending command to server:  
+2024/12/31 09:07:16 [INFO]  New Logger started at 2024-12-31 09:07:16.9501917 -0500 EST m=+0.006495901
+2024/12/31 09:07:16 [INFO]  > 
+2024/12/31 09:07:17 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=7pYyYFWrVN0YG2W3VgxBQg%3D%3D
+
+2024/12/31 09:07:27 [INFO]  Logged in as (e096e76d-ed17-41dc-a366-7b40c7f8dc42) GoogleId: 
+2024/12/31 09:07:34 [INFO]  Sending command to server: yeet 
+2024/12/31 09:07:34 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: yeet
+2024/12/31 09:07:34 [INFO]  > 
+2024/12/31 10:10:28 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 10:10:59 [INFO]  New Logger started at 2024-12-31 10:10:59.0626951 -0500 EST m=+0.006402201
+2024/12/31 10:10:59 [INFO]  > 
+2024/12/31 10:10:59 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Uu6jwHEVSffZrFCZBdcd6A%3D%3D
+
+2024/12/31 10:11:14 [INFO]  Logged in as (5bdced18-6589-4501-a62e-626044519a0d) GoogleId: 
+2024/12/31 10:11:24 [INFO]  Sending command to server: list 
+2024/12/31 10:11:24 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 10:11:24 [INFO]  > 
+2024/12/31 10:11:31 [INFO]  Sending command to server:  
+2024/12/31 11:30:29 [INFO]  New Logger started at 2024-12-31 11:30:29.2415023 -0500 EST m=+0.006265301
+2024/12/31 11:30:29 [INFO]  > 
+2024/12/31 11:30:29 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=FXJCmE0KniSlmLAnp15m9A%3D%3D
+
+2024/12/31 11:30:44 logger.go:59: [ERROR] rpc error: code = Unknown desc = [ERROR] Server was unable to verify or decode session token FXJCmE0KniSlmLAnp15m9A==
+2024/12/31 11:30:44 [INFO]  Logged in as (811444e9-b706-4429-b8d8-03000148eb0e)
+2024/12/31 11:31:44 logger.go:59: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 11:32:12 [INFO]  New Logger started at 2024-12-31 11:32:12.4954599 -0500 EST m=+0.006802401
+2024/12/31 11:32:12 [INFO]  > 
+2024/12/31 11:32:12 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=QdP8dBncT4Tin92t6de-UQ%3D%3D
+
+2024/12/31 11:32:22 [INFO]  Received player data for player cheracc(fb1709b3-0cea-4ba1-8299-9befa8812473) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 11:32:22 [INFO]  Logged in as cheracc(fb1709b3-0cea-4ba1-8299-9befa8812473)
+2024/12/31 11:35:48 [INFO]  Sending command to server:  
+2024/12/31 11:35:52 [INFO]  New Logger started at 2024-12-31 11:35:52.5512953 -0500 EST m=+0.006048901
+2024/12/31 11:35:52 [INFO]  > 
+2024/12/31 11:35:52 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=eYTGtiQvCk_TUGvCTyNLOw%3D%3D
+
+2024/12/31 11:36:02 [INFO]  Received player data for player shawnshitshow(4916bfbf-c35d-4e2e-913a-928b0d4f12bf) Created at 2024-12-30 17:33:19 -0500 EST
+2024/12/31 11:36:02 [INFO]  Logged in as shawnshitshow(4916bfbf-c35d-4e2e-913a-928b0d4f12bf)
+2024/12/31 12:18:13 [INFO]  Sending command to server: stop 
+2024/12/31 12:18:13 [INFO]  > 
+2024/12/31 12:18:27 [INFO]  Sending command to server:  
+2024/12/31 12:18:27 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 12:18:27 [INFO]  > 
+2024/12/31 12:18:52 [INFO]  New Logger started at 2024-12-31 12:18:52.5072012 -0500 EST m=+0.006502201
+2024/12/31 12:18:52 [INFO]  > 
+2024/12/31 12:18:52 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=e4yxWWEGXuBnSw8MFHlPFA%3D%3D
+
+2024/12/31 12:18:57 [INFO]  Received player data for player cheracc(f77fb0e4-c758-4646-a478-51e91dbdbaa1) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 12:18:57 [INFO]  Logged in as cheracc(f77fb0e4-c758-4646-a478-51e91dbdbaa1)
+2024/12/31 12:50:45 [INFO]  Sending command to server:  
+2024/12/31 15:32:42 [INFO]  New Logger started at 2024-12-31 15:32:42.7697292 -0500 EST m=+0.005946701
+2024/12/31 15:32:42 [INFO]  > 
+2024/12/31 15:32:42 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Ly5-Oatw3yPkq2ay33hVPw%3D%3D
+
+2024/12/31 15:32:52 [INFO]  Received player data for player cheracc(58868970-0485-4ed1-a4aa-0b3e5c8b61d2) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 15:32:52 [INFO]  Logged in as cheracc(58868970-0485-4ed1-a4aa-0b3e5c8b61d2)
+2024/12/31 15:33:02 [INFO]  Sending command to server: list 
+2024/12/31 15:33:02 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 15:33:02 [INFO]  > 
+2024/12/31 15:33:23 [INFO]  > 
+2024/12/31 15:33:26 [INFO]  Sending command to server:  
+2024/12/31 15:33:26 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2024/12/31 15:33:26 [INFO]  > 
+2024/12/31 15:34:35 [INFO]  > 
+2024/12/31 15:34:38 [INFO]  Sending command to server: stop 
+2024/12/31 15:34:38 logger.go:59: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] session token does not match sending player
+2024/12/31 15:34:38 [INFO]  > 
+2024/12/31 15:35:03 [INFO]  New Logger started at 2024-12-31 15:35:03.5204565 -0500 EST m=+0.006648301
+2024/12/31 15:35:03 [INFO]  > 
+2024/12/31 15:35:03 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=y1CKDEsAczLbiJjdTvV6jg%3D%3D
+
+2024/12/31 15:35:13 [INFO]  Received player data for player cheracc(16ce2f23-2cce-4ce4-8e78-3c44724d6faa) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 15:35:13 [INFO]  Logged in as cheracc(16ce2f23-2cce-4ce4-8e78-3c44724d6faa)
+2024/12/31 15:35:16 [INFO]  > 
+2024/12/31 15:38:49 [INFO]  New Logger started at 2024-12-31 15:38:49.8624586 -0500 EST m=+0.007214201
+2024/12/31 15:38:49 [INFO]  > 
+2024/12/31 15:38:49 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=-BnIcX89-vf8UJWup9RCYg%3D%3D
+
+2024/12/31 15:38:59 [INFO]  Received player data for player cheracc(4a97910b-ee76-4550-860b-1dd6297552cc) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 15:38:59 [INFO]  Logged in as cheracc(4a97910b-ee76-4550-860b-1dd6297552cc)
+2024/12/31 15:39:01 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=as7H2AEBWtbyg3kYnk_HLw%3D%3D
+
+2024/12/31 15:39:01 [INFO]  > 
+2024/12/31 15:39:36 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=UPWAjkOPlnNoNYuh_nAqUQ%3D%3D
+
+2024/12/31 15:39:36 [INFO]  > 
+2024/12/31 15:39:59 [INFO]  Received player data for player cheracc() Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 15:39:59 [INFO]  Logged in as cheracc()
+2024/12/31 15:40:24 [INFO]  Sending command to server: list 
+2024/12/31 15:40:24 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 15:40:24 [INFO]  > 
+2024/12/31 15:41:09 [INFO]  New Logger started at 2024-12-31 15:41:09.4242655 -0500 EST m=+0.006950401
+2024/12/31 15:41:09 [INFO]  > 
+2024/12/31 15:41:09 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Wb2oKYEX6cER80AqcqVktg%3D%3D
+
+2024/12/31 15:41:19 [INFO]  Received player data for player cheracc(77e9291e-7e54-4552-acd8-d0944f2c1474) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 15:41:19 [INFO]  Logged in as cheracc(77e9291e-7e54-4552-acd8-d0944f2c1474)
+2024/12/31 16:02:20 [INFO]  Sending command to server: list 
+2024/12/31 16:02:20 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 16:02:20 [INFO]  > 
+2024/12/31 16:04:36 [INFO]  Sending command to server: list 
+2024/12/31 16:04:36 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 16:04:36 [INFO]  > 
+2024/12/31 16:05:13 [INFO]  New Logger started at 2024-12-31 16:05:13.601999 -0500 EST m=+0.006518601
+2024/12/31 16:05:13 [INFO]  > 
+2024/12/31 16:05:13 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=UdTp2q1RkwEYSoa-yLPNvg%3D%3D
+
+2024/12/31 16:05:38 [INFO]  Received player data for player cheracc(9af83e2c-68e9-406f-ad0c-dd1c316c4574) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:05:38 [INFO]  Logged in as cheracc(9af83e2c-68e9-406f-ad0c-dd1c316c4574)
+2024/12/31 16:06:42 [INFO]  Sending command to server: list 
+2024/12/31 16:06:42 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 16:06:42 [INFO]  > 
+2024/12/31 16:07:13 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=G3dut1wBuKrizeokkPxIBw%3D%3D
+
+2024/12/31 16:07:13 [INFO]  > 
+2024/12/31 16:07:38 [INFO]  Received player data for player cheracc() Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:07:38 [INFO]  Logged in as cheracc()
+2024/12/31 16:09:25 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=0O6i-mIw8YFzaNejaeToqA%3D%3D
+
+2024/12/31 16:09:25 [INFO]  > 
+2024/12/31 16:09:38 [INFO]  Received player data for player shawnshitshow() Created at 2024-12-30 17:33:19 -0500 EST
+2024/12/31 16:09:38 [INFO]  Logged in as shawnshitshow()
+2024/12/31 16:09:52 [INFO]  Sending command to server: list 
+2024/12/31 16:09:52 [INFO]  Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+There are 2 players online%!(EXTRA <nil>)
+2024/12/31 16:09:52 [INFO]  > 
+2024/12/31 16:14:48 [INFO]  Sending command to server:  
+2024/12/31 16:14:52 [INFO]  New Logger started at 2024-12-31 16:14:52.5686351 -0500 EST m=+0.006941001
+2024/12/31 16:14:52 [INFO]  > 
+2024/12/31 16:14:52 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=d6LVeePxF9xZf6Q6PbrFfQ%3D%3D
+
+2024/12/31 16:15:02 [INFO]  Received player data for player cheracc(d3ad8df3-dbcf-4944-90f1-a69d4dcae7c6) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:15:02 [INFO]  Logged in as cheracc(d3ad8df3-dbcf-4944-90f1-a69d4dcae7c6)
+2024/12/31 16:15:15 [INFO]  Sending command to server: list 
+2024/12/31 16:15:15 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA <nil>)
+2024/12/31 16:15:15 [INFO]  > 
+2024/12/31 16:17:57 [INFO]  New Logger started at 2024-12-31 16:17:57.2250178 -0500 EST m=+0.007054201
+2024/12/31 16:17:57 [INFO]  > 
+2024/12/31 16:17:57 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=qoVdHFxLOFSOmB7xn-MXnA%3D%3D
+
+2024/12/31 16:18:07 [INFO]  Received player data for player cheracc(a18e6106-654e-4552-a312-d1b73ec70ec4) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:18:07 [INFO]  Logged in as cheracc(a18e6106-654e-4552-a312-d1b73ec70ec4)
+2024/12/31 16:18:09 [INFO]  Sending command to server: list 
+2024/12/31 16:18:09 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA string=)
+2024/12/31 16:18:09 [INFO]  > 
+2024/12/31 16:19:52 [INFO]  New Logger started at 2024-12-31 16:19:52.1953118 -0500 EST m=+0.006046501
+2024/12/31 16:19:52 [INFO]  > 
+2024/12/31 16:19:52 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=TtOheVg2mmNFbrTIIESfxA%3D%3D
+
+2024/12/31 16:19:57 [INFO]  Received player data for player cheracc(5ce2c049-4d17-4e92-b9ff-b8bc9f6b4fe3) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:19:57 [INFO]  Logged in as cheracc(5ce2c049-4d17-4e92-b9ff-b8bc9f6b4fe3)
+2024/12/31 16:20:01 [INFO]  Sending command to server: list 
+2024/12/31 16:20:01 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA string=)
+2024/12/31 16:20:01 [INFO]  > 
+2024/12/31 16:21:20 [INFO]  Sending command to server: list 
+2024/12/31 16:21:20 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA string=)
+2024/12/31 16:21:20 [INFO]  > 
+2024/12/31 16:21:26 [INFO]  New Logger started at 2024-12-31 16:21:26.8999529 -0500 EST m=+0.007338101
+2024/12/31 16:21:26 [INFO]  > 
+2024/12/31 16:21:26 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=ryKIyGLSylf7In3T3SU8nw%3D%3D
+
+2024/12/31 16:21:36 [INFO]  Received player data for player cheracc(2293d3e3-1d86-422e-8ee2-f1776656d526) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:21:36 [INFO]  Logged in as cheracc(2293d3e3-1d86-422e-8ee2-f1776656d526)
+2024/12/31 16:21:43 [INFO]  Sending command to server: list 
+2024/12/31 16:21:43 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA string=)
+2024/12/31 16:21:43 [INFO]  > 
+2024/12/31 16:26:08 [INFO]  New Logger started at 2024-12-31 16:26:08.9068682 -0500 EST m=+0.006563801
+2024/12/31 16:26:08 [INFO]  > 
+2024/12/31 16:26:08 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=k6LfvSQTRO3P_jG_eZkHqA%3D%3D
+
+2024/12/31 16:26:18 [INFO]  Received player data for player cheracc(fded63d4-841e-4f5f-83db-c77f383070e1) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:26:18 [INFO]  Logged in as cheracc(fded63d4-841e-4f5f-83db-c77f383070e1)
+2024/12/31 16:26:35 [INFO]  Sending command to server: list 
+2024/12/31 16:26:35 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA <nil>)
+2024/12/31 16:26:35 [INFO]  > 
+2024/12/31 16:27:46 [INFO]  New Logger started at 2024-12-31 16:27:46.1438286 -0500 EST m=+0.007317201
+2024/12/31 16:27:46 [INFO]  > 
+2024/12/31 16:27:46 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=X65MRQPTIExGG1-E3E-d0w%3D%3D
+
+2024/12/31 16:27:56 [INFO]  Received player data for player cheracc(3dbf2e48-1aea-4dc6-8ae1-e10f07e83bbd) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:27:56 [INFO]  Logged in as cheracc(3dbf2e48-1aea-4dc6-8ae1-e10f07e83bbd)
+2024/12/31 16:28:07 [INFO]  Sending command to server: list 
+2024/12/31 16:28:07 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA <nil>)
+2024/12/31 16:28:07 [INFO]  > 
+2024/12/31 16:30:01 [INFO]  New Logger started at 2024-12-31 16:30:01.9245078 -0500 EST m=+0.057975901
+2024/12/31 16:30:02 [INFO]  > 
+2024/12/31 16:30:02 [INFO]  Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=EoEtw6id6lt15WklAhkZHg%3D%3D
+
+2024/12/31 16:30:07 [INFO]  Received player data for player cheracc(3a11d59c-4c4a-4fc0-ae9b-ad984ba2bda6) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 16:30:07 [INFO]  Logged in as cheracc(3a11d59c-4c4a-4fc0-ae9b-ad984ba2bda6)
+2024/12/31 16:30:10 [INFO]  Sending command to server: list 
+2024/12/31 16:30:10 [INFO]  Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online%!(EXTRA <nil>)
+2024/12/31 16:30:10 [INFO]  > 
+2024/12/31 17:08:23 [INFO] New Logger started at 2024-12-31 17:08:23.4195152 -0500 EST m=+0.006223701
+2024/12/31 17:08:23 [INFO] > 
+2024/12/31 17:08:23 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=xw8oSH5w2jLFtWbhL_wggQ%3D%3D
+
+2024/12/31 17:08:33 [INFO] Received player data for player cheracc(5b1c1623-7ce8-4da0-a477-7124bee425d4) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 17:08:33 [INFO] Logged in as cheracc(5b1c1623-7ce8-4da0-a477-7124bee425d4)
+2024/12/31 17:09:50 [INFO] Sending command to server: list 
+2024/12/31 17:09:50 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online%!(EXTRA <nil>)
+2024/12/31 17:09:50 [INFO] > 
+2024/12/31 17:12:33 logger.go:72: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:50051: connectex: No connection could be made because the target machine actively refused it."
+2024/12/31 17:12:40 [INFO] New Logger started at 2024-12-31 17:12:40.0266827 -0500 EST m=+0.006913701
+2024/12/31 17:12:40 [INFO] > 
+2024/12/31 17:12:40 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=1qidNvWaW2cmrNc12dqSUA%3D%3D
+
+2024/12/31 17:12:55 [INFO] Received player data for player cheracc(1cd4ffe7-239a-4437-ab28-6a04b913d5d7) Created at 2024-12-30 17:31:00 -0500 EST
+2024/12/31 17:12:55 [INFO] Logged in as cheracc(1cd4ffe7-239a-4437-ab28-6a04b913d5d7)
+2024/12/31 17:12:59 [INFO] Sending command to server: list 
+2024/12/31 17:12:59 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2024/12/31 17:12:59 [INFO] > 
+2024/12/31 17:19:50 [INFO] Sending command to server: stop 
+2024/12/31 17:19:50 [INFO] > 
+2024/12/31 17:19:53 [INFO] Sending command to server:  
+2025/01/01 07:32:26 [INFO] New Logger started at 2025-01-01 07:32:26.808033 -0500 EST m=+0.006077001
+2025/01/01 07:32:26 [INFO] > 
+2025/01/01 07:32:26 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=PxfN4q3weBblyYfRCfc6kA%3D%3D
+
+2025/01/01 07:32:36 [INFO] Received player data for player cheracc(9d7c7e1b-038a-4c01-bfea-17347d5f3d1b) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:32:36 [INFO] Logged in as cheracc(9d7c7e1b-038a-4c01-bfea-17347d5f3d1b)
+2025/01/01 07:32:56 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:01 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:06 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:11 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:16 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:21 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:26 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:31 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:36 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:33:41 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:34:33 [INFO] New Logger started at 2025-01-01 07:34:33.4074009 -0500 EST m=+0.007048601
+2025/01/01 07:34:33 [INFO] > 
+2025/01/01 07:34:33 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=q4iYgxwBWQwip2P5XhSDXw%3D%3D
+
+2025/01/01 07:34:43 [INFO] Received player data for player cheracc(50cad5ec-00af-4138-ac30-ecf45aba30c5) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:34:43 [INFO] Logged in as cheracc(50cad5ec-00af-4138-ac30-ecf45aba30c5)
+2025/01/01 07:35:03 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:35:08 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:35:13 logger.go:74: [ERROR] rpc error: code = Unimplemented desc = unknown service grpc.Chat
+2025/01/01 07:38:45 [INFO] New Logger started at 2025-01-01 07:38:45.0550588 -0500 EST m=+0.007299501
+2025/01/01 07:38:45 [INFO] > 
+2025/01/01 07:38:45 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=s7zNozCg5NfGtQnVgwVpJQ%3D%3D
+
+2025/01/01 07:38:55 [INFO] Received player data for player cheracc(74c760ef-c5b0-4c67-9a62-cedfd1ca2f5b) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:38:55 [INFO] Logged in as cheracc(74c760ef-c5b0-4c67-9a62-cedfd1ca2f5b)
+2025/01/01 07:39:06 [INFO] Sending command to server: list 
+2025/01/01 07:39:06 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 07:39:06 [INFO] > 
+2025/01/01 07:39:15 [INFO] Chat stream closed by remote server
+2025/01/01 07:40:56 [INFO] Sending command to server: stop 
+2025/01/01 07:40:56 [INFO] > 
+2025/01/01 07:48:37 [INFO] New Logger started at 2025-01-01 07:48:37.5714593 -0500 EST m=+0.006561701
+2025/01/01 07:48:37 [INFO] > 
+2025/01/01 07:48:37 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=2caiF-V75oHSzl0-Heq5jw%3D%3D
+
+2025/01/01 07:48:42 [INFO] Received player data for player cheracc(b064b447-f024-4e8f-8a67-61cf3ecb2cee) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:48:42 [INFO] Logged in as cheracc(b064b447-f024-4e8f-8a67-61cf3ecb2cee)
+2025/01/01 07:49:23 [INFO] Sending command to server: list 
+2025/01/01 07:49:23 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 07:49:23 [INFO] > 
+2025/01/01 07:49:25 logger.go:74: [ERROR] rpc error: code = Unknown desc = [ERROR] invalid or expired session token
+2025/01/01 07:49:25 [INFO] > 
+2025/01/01 07:49:29 logger.go:74: [ERROR] rpc error: code = Unknown desc = [ERROR] invalid or expired session token
+2025/01/01 07:49:29 [INFO] > 
+2025/01/01 07:49:50 logger.go:74: [ERROR] rpc error: code = Unknown desc = [ERROR] invalid or expired session token
+2025/01/01 07:49:50 [INFO] > 
+2025/01/01 07:49:53 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Wk32MUinbgKfzo8lKgJzbg%3D%3D
+
+2025/01/01 07:49:53 [INFO] > 
+2025/01/01 07:50:40 [INFO] Sending command to server: list 
+2025/01/01 07:50:40 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] invalid session token
+2025/01/01 07:50:40 [INFO] > 
+2025/01/01 07:50:42 [INFO] Received player data for player cheracc() Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:50:42 [INFO] Logged in as cheracc()
+2025/01/01 07:50:43 [INFO] Sending command to server: list 
+2025/01/01 07:50:43 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 07:50:43 [INFO] > 
+2025/01/01 07:50:47 logger.go:74: [ERROR] rpc error: code = Unknown desc = [ERROR] invalid or expired session token
+2025/01/01 07:50:47 [INFO] > 
+2025/01/01 07:50:48 [INFO] Sending command to server: list 
+2025/01/01 07:50:48 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 07:50:48 [INFO] > 
+2025/01/01 07:53:06 [INFO] New Logger started at 2025-01-01 07:53:06.032548 -0500 EST m=+0.007752401
+2025/01/01 07:53:06 [INFO] > 
+2025/01/01 07:53:06 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=9qVzB-s6pFb62ttgQkyJ5g%3D%3D
+
+2025/01/01 07:53:16 [INFO] Received player data for player cheracc(cd1e17fd-dee0-4510-9a55-83aa1053321d) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 07:53:16 [INFO] Logged in as cheracc(cd1e17fd-dee0-4510-9a55-83aa1053321d)
+2025/01/01 07:53:19 [INFO] Sending command to server: list 
+2025/01/01 07:53:19 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 07:53:19 [INFO] > 
+2025/01/01 08:01:25 [INFO] New Logger started at 2025-01-01 08:01:25.9699714 -0500 EST m=+0.006031801
+2025/01/01 08:01:25 [INFO] > 
+2025/01/01 08:01:26 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=cXJ5wwLEwmH89KLeQrvATQ%3D%3D
+
+2025/01/01 08:01:31 [INFO] Received player data for player cheracc(c40ab3bf-fb95-4b27-bf6b-f8fd8c3cbb08) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:01:31 [INFO] Logged in as cheracc(c40ab3bf-fb95-4b27-bf6b-f8fd8c3cbb08)
+2025/01/01 08:02:19 [INFO] Sending command to server: list 
+2025/01/01 08:02:19 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There is 1 player online
+2025/01/01 08:02:19 [INFO] > 
+2025/01/01 08:02:20 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:02:20 [INFO] > 
+2025/01/01 08:02:20 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:03:05 [INFO] New Logger started at 2025-01-01 08:03:05.7635047 -0500 EST m=+0.007001201
+2025/01/01 08:03:05 [INFO] > 
+2025/01/01 08:03:05 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=kE7STrJ-HpOjF2hTi-25bg%3D%3D
+
+2025/01/01 08:03:20 [INFO] Joined chat.
+2025/01/01 08:03:20 [INFO] Received player data for player shawnshitshow(a6f43f4e-84b7-4de3-b8d0-6702dd9a169e) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 08:03:20 [INFO] Logged in as shawnshitshow(a6f43f4e-84b7-4de3-b8d0-6702dd9a169e)
+2025/01/01 08:03:26 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:03:26 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:03:26 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:03:26 [INFO] > 
+2025/01/01 08:03:42 [INFO] Sending command to server: yo thats some shit right there dawg
+2025/01/01 08:03:42 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: yo
+2025/01/01 08:03:42 [INFO] > 
+2025/01/01 08:03:52 [INFO] [CHAT] cheracc: yo thats some shit right there dawg
+2025/01/01 08:03:52 [INFO] [CHAT] cheracc: yo thats some shit right there dawg
+2025/01/01 08:03:52 [INFO] [CHAT] cheracc: yo thats some shit right there dawg
+2025/01/01 08:03:52 [INFO] > 
+2025/01/01 08:04:36 [INFO] Sending command to server:  
+2025/01/01 08:06:36 [INFO] New Logger started at 2025-01-01 08:06:36.5723308 -0500 EST m=+0.006767601
+2025/01/01 08:06:36 [INFO] > 
+2025/01/01 08:06:36 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=RZefj5Ut__S4qV7MAL3flQ%3D%3D
+
+2025/01/01 08:06:46 [INFO] Joined chat.
+2025/01/01 08:06:46 [INFO] Received player data for player cheracc(5bfaf234-04d4-48ea-b6f5-ad2265ec8c5a) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:06:46 [INFO] Logged in as cheracc(5bfaf234-04d4-48ea-b6f5-ad2265ec8c5a)
+2025/01/01 08:07:07 [INFO] New Logger started at 2025-01-01 08:07:07.8252924 -0500 EST m=+0.006189001
+2025/01/01 08:07:07 [INFO] > 
+2025/01/01 08:07:07 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=2RBzktFU83i-vdsol6Jhpg%3D%3D
+
+2025/01/01 08:07:22 [INFO] Joined chat.
+2025/01/01 08:07:22 [INFO] Received player data for player shawnshitshow(bb2ff20f-6374-439b-bab0-0fdbaac2f6a2) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 08:07:22 [INFO] Logged in as shawnshitshow(bb2ff20f-6374-439b-bab0-0fdbaac2f6a2)
+2025/01/01 08:07:30 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:07:30 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:07:30 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:07:30 [INFO] > 
+2025/01/01 08:08:52 [INFO] [CHAT] cheracc: sup my wigga
+2025/01/01 08:08:52 [INFO] [CHAT] cheracc: sup my wigga
+2025/01/01 08:08:52 [INFO] [CHAT] cheracc: sup my wigga
+2025/01/01 08:08:52 [INFO] > 
+2025/01/01 08:09:08 [INFO] [CHAT] cheracc: fo shizz
+2025/01/01 08:09:08 [INFO] [CHAT] cheracc: fo shizz
+2025/01/01 08:09:08 [INFO] [CHAT] cheracc: fo shizz
+2025/01/01 08:09:08 [INFO] > 
+2025/01/01 08:10:06 [INFO] Sending command to server: list 
+2025/01/01 08:10:06 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:10:06 [INFO] > 
+2025/01/01 08:10:28 [INFO] Sending command to server: list 
+2025/01/01 08:10:28 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+There are 2 players online
+2025/01/01 08:10:28 [INFO] > 
+2025/01/01 08:13:41 [INFO] Sending command to server:  
+2025/01/01 08:13:46 [INFO] New Logger started at 2025-01-01 08:13:46.6895955 -0500 EST m=+0.006575601
+2025/01/01 08:13:46 [INFO] > 
+2025/01/01 08:13:46 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=RFR9duNMDpLwNTUBiDm6Ww%3D%3D
+
+2025/01/01 08:13:56 [INFO] Joined chat.
+2025/01/01 08:13:56 [INFO] Received player data for player cheracc(191027e2-66e5-45dc-82f2-c1dbbeacb4d2) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:13:56 [INFO] Logged in as cheracc(191027e2-66e5-45dc-82f2-c1dbbeacb4d2)
+2025/01/01 08:14:06 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:14:06 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:14:06 [INFO] > 
+2025/01/01 08:15:09 [INFO] Sending command to server:  
+2025/01/01 08:15:13 [INFO] New Logger started at 2025-01-01 08:15:13.6268149 -0500 EST m=+0.006722701
+2025/01/01 08:15:13 [INFO] > 
+2025/01/01 08:15:13 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=hbpxGB-p2SVkN83_KwqY3Q%3D%3D
+
+2025/01/01 08:15:18 [INFO] Received player data for player cheracc(83b354af-0b6f-4d78-80f8-c36f6c2cc196) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:15:18 [INFO] Logged in as cheracc(83b354af-0b6f-4d78-80f8-c36f6c2cc196)
+2025/01/01 08:15:23 [INFO] Joined chat.
+2025/01/01 08:15:25 [INFO] Sending command to server: list 
+2025/01/01 08:15:25 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:15:25 [INFO] > 
+2025/01/01 08:15:26 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:15:26 [INFO] > 
+2025/01/01 08:16:43 [INFO] Sending command to server:  
+2025/01/01 08:16:49 [INFO] New Logger started at 2025-01-01 08:16:49.2819902 -0500 EST m=+0.006217901
+2025/01/01 08:16:49 [INFO] > 
+2025/01/01 08:16:49 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=gyaPOc8DliWpKddD8-jSCA%3D%3D
+
+2025/01/01 08:16:59 [INFO] Joined chat.
+2025/01/01 08:16:59 [INFO] Received player data for player cheracc(c20e4124-8ef6-4082-959b-dc71431c24e9) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:16:59 [INFO] Logged in as cheracc(c20e4124-8ef6-4082-959b-dc71431c24e9)
+2025/01/01 08:17:04 [INFO] Sending command to server: list 
+2025/01/01 08:17:04 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:17:04 [INFO] > 
+2025/01/01 08:17:15 [INFO] Sending command to server:  
+2025/01/01 08:17:16 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:17:16 [INFO] > 
+2025/01/01 08:17:25 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:17:25 [INFO] > 
+2025/01/01 08:20:00 [INFO] New Logger started at 2025-01-01 08:20:00.564958 -0500 EST m=+0.005916801
+2025/01/01 08:20:00 [INFO] > 
+2025/01/01 08:20:00 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=cUdl72aelAaBddj7ngfI0A%3D%3D
+
+2025/01/01 08:20:05 [INFO] Received player data for player cheracc(5b03bea2-abe9-42d7-a0ca-f15dba68fa6b) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:20:05 [INFO] Logged in as cheracc(5b03bea2-abe9-42d7-a0ca-f15dba68fa6b)
+2025/01/01 08:20:10 [INFO] Joined chat.
+2025/01/01 08:20:10 [INFO] Sending command to server: list 
+2025/01/01 08:20:10 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:20:10 [INFO] > 
+2025/01/01 08:21:09 [INFO] New Logger started at 2025-01-01 08:21:09.923905 -0500 EST m=+0.006694801
+2025/01/01 08:21:09 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Qi4x_ZTJGkmNG7OQXjVx1A%3D%3D
+
+2025/01/01 08:21:19 [INFO] Joined chat.
+2025/01/01 08:21:19 [INFO] Received player data for player cheracc(2212ebd6-66f2-437d-9a5d-19ea656c9351) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:21:19 [INFO] Logged in as cheracc(2212ebd6-66f2-437d-9a5d-19ea656c9351)
+2025/01/01 08:21:25 [INFO] Sending command to server: list 
+2025/01/01 08:21:25 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:21:37 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:22:15 [INFO] Sending command to server:  
+2025/01/01 08:22:20 [INFO] New Logger started at 2025-01-01 08:22:20.4078952 -0500 EST m=+0.006256201
+2025/01/01 08:22:20 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=Hp3wXMwW9g9RIZc0FLCKmA%3D%3D
+
+2025/01/01 08:22:30 [INFO] Joined chat.
+2025/01/01 08:22:30 [INFO] Received player data for player cheracc(70b351eb-9a6a-4a1b-a856-162d3d5ee9e1) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:22:30 [INFO] Logged in as cheracc(70b351eb-9a6a-4a1b-a856-162d3d5ee9e1)
+2025/01/01 08:22:39 [INFO] Sending command to server: list 
+2025/01/01 08:22:39 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 2 players online
+2025/01/01 08:22:46 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:23:18 [INFO] New Logger started at 2025-01-01 08:23:18.9147148 -0500 EST m=+0.006653001
+2025/01/01 08:23:18 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=zxt9ez6QUqiRVcjz13_nTA%3D%3D
+
+2025/01/01 08:23:33 [INFO] Joined chat.
+2025/01/01 08:23:33 [INFO] Received player data for player shawnshitshow(1f4a429c-840d-4505-88bc-a831fc194ef1) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 08:23:33 [INFO] Logged in as shawnshitshow(1f4a429c-840d-4505-88bc-a831fc194ef1)
+2025/01/01 08:23:37 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:23:37 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:24:33 [INFO] New Logger started at 2025-01-01 08:24:33.1396057 -0500 EST m=+0.006082901
+2025/01/01 08:24:33 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=hEz0Rz3f66CvPXiMFpfHVA%3D%3D
+
+2025/01/01 08:24:53 [INFO] Joined chat.
+2025/01/01 08:24:53 [INFO] Received player data for player cheracc.me(e0ff649b-aab2-44e6-a9e6-b10c82aebff7) Created at 2024-12-30 17:33:40 -0500 EST
+2025/01/01 08:24:53 [INFO] Logged in as cheracc.me(e0ff649b-aab2-44e6-a9e6-b10c82aebff7)
+2025/01/01 08:24:57 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:24:57 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:24:57 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:25:04 [INFO] [CHAT] cheracc.me: sup yo
+2025/01/01 08:25:04 [INFO] [CHAT] cheracc.me: sup yo
+2025/01/01 08:25:04 [INFO] [CHAT] cheracc.me: sup yo
+2025/01/01 08:25:12 [INFO] [CHAT] cheracc: hows it goin bruh
+2025/01/01 08:25:12 [INFO] [CHAT] cheracc: hows it goin bruh
+2025/01/01 08:25:12 [INFO] [CHAT] cheracc: hows it goin bruh
+2025/01/01 08:27:35 [INFO] Sending command to server:  
+2025/01/01 08:27:39 [INFO] New Logger started at 2025-01-01 08:27:39.6102155 -0500 EST m=+0.006894401
+2025/01/01 08:27:39 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=3e_GaYaNR0To7BSVoCA7Rg%3D%3D
+
+2025/01/01 08:27:49 [INFO] Joined chat.
+2025/01/01 08:27:49 [INFO] Received player data for player cheracc(00c47c81-e254-471f-b0ad-bc68e6cf1fe0) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:27:49 [INFO] Logged in as cheracc(00c47c81-e254-471f-b0ad-bc68e6cf1fe0)
+2025/01/01 08:27:53 [INFO] Sending command to server: list 
+2025/01/01 08:27:53 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+There are 3 players online
+2025/01/01 08:27:55 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:27:55 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:27:55 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:28:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:28:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:28:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:28:13 [INFO] [CHAT] cheracc.me: yo
+2025/01/01 08:28:13 [INFO] [CHAT] cheracc.me: yo
+2025/01/01 08:28:13 [INFO] [CHAT] cheracc.me: yo
+2025/01/01 08:28:19 [INFO] [CHAT] cheracc.me: it aint deletin the > 
+2025/01/01 08:28:19 [INFO] [CHAT] cheracc.me: it aint deletin the > 
+2025/01/01 08:28:19 [INFO] [CHAT] cheracc.me: it aint deletin the > 
+2025/01/01 08:28:43 [INFO] New Logger started at 2025-01-01 08:28:43.5186176 -0500 EST m=+0.008739901
+2025/01/01 08:28:43 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=VmW3C-DGqTDIXxgFb4mgSw%3D%3D
+
+2025/01/01 08:28:48 [INFO] Received player data for player cheracc(502e1cc0-5584-4e6f-a813-80c0790a5504) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:28:48 [INFO] Logged in as cheracc(502e1cc0-5584-4e6f-a813-80c0790a5504)
+2025/01/01 08:28:53 [INFO] Joined chat.
+2025/01/01 08:29:00 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:29:00 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:29:00 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:29:05 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:29:05 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:29:05 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:29:10 [INFO] [CHAT] shawnshitshow: that took a minute
+2025/01/01 08:29:10 [INFO] [CHAT] shawnshitshow: that took a minute
+2025/01/01 08:29:10 [INFO] [CHAT] shawnshitshow: that took a minute
+2025/01/01 08:29:15 [INFO] [CHAT] shawnshitshow: still aint deletin the >
+2025/01/01 08:29:15 [INFO] [CHAT] shawnshitshow: still aint deletin the >
+2025/01/01 08:29:15 [INFO] [CHAT] shawnshitshow: still aint deletin the >
+2025/01/01 08:32:54 [INFO] New Logger started at 2025-01-01 08:32:54.1192194 -0500 EST m=+0.006109701
+2025/01/01 08:32:54 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=7ahw8ZWFGD_V_0cSxJVZgw%3D%3D
+
+2025/01/01 08:33:04 [INFO] Joined chat.
+2025/01/01 08:33:04 [INFO] Received player data for player cheracc(4b71b6d6-a447-4042-a9a7-3152b56423f3) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:33:04 [INFO] Logged in as cheracc(4b71b6d6-a447-4042-a9a7-3152b56423f3)
+2025/01/01 08:33:07 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:33:07 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:33:07 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:33:14 [INFO] [CHAT] cheracc: hows this doin
+2025/01/01 08:33:14 [INFO] [CHAT] cheracc: hows this doin
+2025/01/01 08:33:14 [INFO] [CHAT] cheracc: hows this doin
+2025/01/01 08:33:21 [INFO] [CHAT] shawnshitshow: lets see
+2025/01/01 08:33:21 [INFO] [CHAT] shawnshitshow: lets see
+2025/01/01 08:33:21 [INFO] [CHAT] shawnshitshow: lets see
+2025/01/01 08:33:26 [INFO] [CHAT] shawnshitshow: motherfucker
+2025/01/01 08:33:26 [INFO] [CHAT] shawnshitshow: motherfucker
+2025/01/01 08:33:26 [INFO] [CHAT] shawnshitshow: motherfucker
+2025/01/01 08:35:11 [INFO] Sending command to server:  
+2025/01/01 08:35:16 [INFO] New Logger started at 2025-01-01 08:35:16.256468 -0500 EST m=+0.006116201
+2025/01/01 08:35:16 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=uoqEEZxj9hJ2sq3UkjVIZQ%3D%3D
+
+2025/01/01 08:35:21 [INFO] Received player data for player cheracc(b16dd806-d52b-47a0-9ef1-cdc9ce4abcde) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:35:21 [INFO] Logged in as cheracc(b16dd806-d52b-47a0-9ef1-cdc9ce4abcde)
+2025/01/01 08:35:26 [INFO] Joined chat.
+2025/01/01 08:35:26 [INFO] Sending command to server: list 
+2025/01/01 08:35:26 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 3 players online
+2025/01/01 08:35:31 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:35:31 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:35:31 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:35:38 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:35:38 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:35:38 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:35:48 [INFO] [CHAT] shawnshitshow: gottteeeem
+2025/01/01 08:35:48 [INFO] [CHAT] shawnshitshow: gottteeeem
+2025/01/01 08:35:48 [INFO] [CHAT] shawnshitshow: gottteeeem
+2025/01/01 08:37:17 [INFO] New Logger started at 2025-01-01 08:37:17.4299852 -0500 EST m=+0.006447501
+2025/01/01 08:37:17 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=YWuYB5B0c_uWAG4neBbSGw%3D%3D
+
+2025/01/01 08:37:27 [INFO] Joined chat.
+2025/01/01 08:37:27 [INFO] Received player data for player cheracc(ce984338-f87d-4319-a239-7f58636a5f2a) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:37:27 [INFO] Logged in as cheracc(ce984338-f87d-4319-a239-7f58636a5f2a)
+2025/01/01 08:37:29 [INFO] Sending command to server: list 
+2025/01/01 08:37:29 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 3 players online
+2025/01/01 08:37:32 [INFO] Sending command to server:  
+2025/01/01 08:37:32 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:33 [INFO] Sending command to server:  
+2025/01/01 08:37:33 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:33 [INFO] Sending command to server:  
+2025/01/01 08:37:33 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:34 [INFO] Sending command to server:  
+2025/01/01 08:37:34 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:34 [INFO] Sending command to server:  
+2025/01/01 08:37:34 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:39 [INFO] [CHAT] cheracc: wat
+2025/01/01 08:37:39 [INFO] [CHAT] cheracc: wat
+2025/01/01 08:37:39 [INFO] [CHAT] cheracc: wat
+2025/01/01 08:37:44 [INFO] [CHAT] shawnshitshow: wat
+2025/01/01 08:37:44 [INFO] [CHAT] shawnshitshow: wat
+2025/01/01 08:37:44 [INFO] [CHAT] shawnshitshow: wat
+2025/01/01 08:37:51 [INFO] Sending command to server: s 
+2025/01/01 08:37:51 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: s
+2025/01/01 08:37:53 [INFO] Sending command to server:  
+2025/01/01 08:37:53 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:54 [INFO] Sending command to server:  
+2025/01/01 08:37:54 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:37:55 [INFO] Sending command to server:  
+2025/01/01 08:37:55 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:38:01 [INFO] Sending command to server:  
+2025/01/01 08:38:01 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: 
+2025/01/01 08:42:14 [INFO] New Logger started at 2025-01-01 08:42:14.658909 -0500 EST m=+0.006739901
+2025/01/01 08:42:14 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=UZAuHJBfjXCyWRFqkM0Rjg%3D%3D
+
+2025/01/01 08:42:34 [INFO] Joined chat.
+2025/01/01 08:42:34 [INFO] Received player data for player cheracc(ed7296c0-92b1-4da3-9e7c-eb9764886f2b) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:42:34 [INFO] Logged in as cheracc(ed7296c0-92b1-4da3-9e7c-eb9764886f2b)
+2025/01/01 08:42:41 [INFO] Sending command to server: test 
+2025/01/01 08:42:41 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: test
+2025/01/01 08:42:43 [INFO] Sending command to server: list 
+2025/01/01 08:42:43 [INFO] Online Players:
+     cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+There are 3 players online
+2025/01/01 08:42:57 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:42:57 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:42:57 [INFO] [CHAT] cheracc: hi
+2025/01/01 08:43:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:43:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:43:04 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:44:30 [INFO] New Logger started at 2025-01-01 08:44:30.5741331 -0500 EST m=+0.006928801
+2025/01/01 08:44:30 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=nkzsB-xqsm_Wv4XYnTZVXQ%3D%3D
+
+2025/01/01 08:44:35 [INFO] Received player data for player cheracc(8d55df31-99e7-437f-bdfa-ee8c6a4d9455) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:44:35 [INFO] Logged in as cheracc(8d55df31-99e7-437f-bdfa-ee8c6a4d9455)
+2025/01/01 08:44:40 [INFO] Joined chat.
+2025/01/01 08:44:42 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:44:42 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:44:42 [INFO] [CHAT] shawnshitshow: hi
+2025/01/01 08:44:51 [INFO] [CHAT] cheracc: well...
+2025/01/01 08:44:51 [INFO] [CHAT] cheracc: well...
+2025/01/01 08:44:51 [INFO] [CHAT] cheracc: well...
+2025/01/01 08:45:29 [INFO] New Logger started at 2025-01-01 08:45:29.0552313 -0500 EST m=+0.006690201
+2025/01/01 08:45:29 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=D32fsxV41hND-wkUu0n8jA%3D%3D
+
+2025/01/01 08:45:39 [INFO] Joined chat.
+2025/01/01 08:45:39 [INFO] Received player data for player cheracc(d76d4fcb-7e4d-40a6-a90d-8ac29650889f) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:45:39 [INFO] Logged in as cheracc(d76d4fcb-7e4d-40a6-a90d-8ac29650889f)
+2025/01/01 08:45:43 [INFO] [CHAT] cheracc.me: ...
+2025/01/01 08:45:43 [INFO] [CHAT] cheracc.me: ...
+2025/01/01 08:45:43 [INFO] [CHAT] cheracc.me: ...
+2025/01/01 08:45:48 [INFO] [CHAT] cheracc.me: holyfuckinshit
+2025/01/01 08:45:48 [INFO] [CHAT] cheracc.me: holyfuckinshit
+2025/01/01 08:45:48 [INFO] [CHAT] cheracc.me: holyfuckinshit
+2025/01/01 08:45:54 [INFO] [CHAT] shawnshitshow: the shit works
+2025/01/01 08:45:54 [INFO] [CHAT] shawnshitshow: the shit works
+2025/01/01 08:45:54 [INFO] [CHAT] shawnshitshow: the shit works
+2025/01/01 08:45:57 [INFO] Sending command to server:  
+2025/01/01 08:46:02 [INFO] Sending command to server:  
+2025/01/01 08:46:02 [INFO] New Logger started at 2025-01-01 08:46:02.8442615 -0500 EST m=+0.005897001
+2025/01/01 08:46:02 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=mVqQeED5uabQWVvbG9WK2g%3D%3D
+
+2025/01/01 08:46:09 [INFO] New Logger started at 2025-01-01 08:46:09.7729215 -0500 EST m=+0.006422201
+2025/01/01 08:46:09 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=dOLAMX6Ma6IJQN9l44SguQ%3D%3D
+
+2025/01/01 08:46:17 [INFO] Joined chat.
+2025/01/01 08:46:17 [INFO] Received player data for player shawnshitshow(4c347ddb-c70e-4f56-8267-0c2684fe9df5) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 08:46:17 [INFO] Logged in as shawnshitshow(4c347ddb-c70e-4f56-8267-0c2684fe9df5)
+2025/01/01 08:46:34 [INFO] Joined chat.
+2025/01/01 08:46:34 [INFO] Received player data for player cheracc.me(b1be6821-09f3-4cd6-ae75-e67bbf5ab923) Created at 2024-12-30 17:33:40 -0500 EST
+2025/01/01 08:46:34 [INFO] Logged in as cheracc.me(b1be6821-09f3-4cd6-ae75-e67bbf5ab923)
+2025/01/01 08:46:39 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:46:39 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:46:39 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 08:46:44 [INFO] [CHAT] shawnshitshow: whats up
+2025/01/01 08:46:44 [INFO] [CHAT] shawnshitshow: whats up
+2025/01/01 08:46:44 [INFO] [CHAT] shawnshitshow: whats up
+2025/01/01 08:46:50 [INFO] [CHAT] cheracc: it works omg
+2025/01/01 08:46:50 [INFO] [CHAT] cheracc: it works omg
+2025/01/01 08:46:50 [INFO] [CHAT] cheracc: it works omg
+2025/01/01 08:47:09 [INFO] [CHAT] cheracc: test
+2025/01/01 08:47:09 [INFO] [CHAT] cheracc: test
+2025/01/01 08:47:09 [INFO] [CHAT] cheracc: test
+2025/01/01 08:47:14 [INFO] [CHAT] cheracc: lets goooooo
+2025/01/01 08:47:14 [INFO] [CHAT] cheracc: lets goooooo
+2025/01/01 08:47:14 [INFO] [CHAT] cheracc: lets goooooo
+2025/01/01 08:47:29 [INFO] [CHAT] cheracc.me: fjldks
+2025/01/01 08:47:29 [INFO] [CHAT] cheracc.me: fjldks
+2025/01/01 08:47:29 [INFO] [CHAT] cheracc.me: fjldks
+2025/01/01 08:48:00 [INFO] Sending command to server: list 
+2025/01/01 08:48:00 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 3 players online
+2025/01/01 08:48:28 [INFO] [CHAT] cheracc.me: i want a girl who knows whats best
+2025/01/01 08:48:28 [INFO] [CHAT] cheracc.me: i want a girl who knows whats best
+2025/01/01 08:48:28 [INFO] [CHAT] cheracc.me: i want a girl who knows whats best
+2025/01/01 08:48:38 [INFO] [CHAT] shawnshitshow: i want a girl with shoes that cut and uh
+2025/01/01 08:48:38 [INFO] [CHAT] shawnshitshow: i want a girl with shoes that cut and uh
+2025/01/01 08:48:38 [INFO] [CHAT] shawnshitshow: i want a girl with shoes that cut and uh
+2025/01/01 08:48:46 [INFO] [CHAT] cheracc: eyes that burn like cigarettes
+2025/01/01 08:48:46 [INFO] [CHAT] cheracc: eyes that burn like cigarettes
+2025/01/01 08:48:46 [INFO] [CHAT] cheracc: eyes that burn like cigarettes
+2025/01/01 08:48:57 [INFO] [CHAT] cheracc.me: with fingernails that cut like justice
+2025/01/01 08:48:57 [INFO] [CHAT] cheracc.me: with fingernails that cut like justice
+2025/01/01 08:48:57 [INFO] [CHAT] cheracc.me: with fingernails that cut like justice
+2025/01/01 08:49:17 [INFO] [CHAT] cheracc.me: and a voice that is dark like tinted glass
+2025/01/01 08:49:17 [INFO] [CHAT] cheracc.me: and a voice that is dark like tinted glass
+2025/01/01 08:49:17 [INFO] [CHAT] cheracc.me: and a voice that is dark like tinted glass
+2025/01/01 08:49:22 [INFO] [CHAT] shawnshitshow: she's fast, and thorough
+2025/01/01 08:49:22 [INFO] [CHAT] shawnshitshow: she's fast, and thorough
+2025/01/01 08:49:22 [INFO] [CHAT] shawnshitshow: she's fast, and thorough
+2025/01/01 08:49:27 [INFO] [CHAT] cheracc: and sharp as a tack
+2025/01/01 08:49:27 [INFO] [CHAT] cheracc: and sharp as a tack
+2025/01/01 08:49:27 [INFO] [CHAT] cheracc: and sharp as a tack
+2025/01/01 08:49:32 [INFO] [CHAT] cheracc.me: she's touring the facility
+2025/01/01 08:49:32 [INFO] [CHAT] cheracc.me: she's touring the facility
+2025/01/01 08:49:32 [INFO] [CHAT] cheracc.me: she's touring the facility
+2025/01/01 08:49:37 [INFO] [CHAT] shawnshitshow: and picking up slack
+2025/01/01 08:49:37 [INFO] [CHAT] shawnshitshow: and picking up slack
+2025/01/01 08:49:37 [INFO] [CHAT] shawnshitshow: and picking up slack
+2025/01/01 08:49:42 [INFO] [CHAT] cheracc: i want a girl
+2025/01/01 08:49:42 [INFO] [CHAT] cheracc: i want a girl
+2025/01/01 08:49:42 [INFO] [CHAT] cheracc: i want a girl
+2025/01/01 08:49:47 [INFO] [CHAT] cheracc.me: with a short skirt
+2025/01/01 08:49:47 [INFO] [CHAT] cheracc.me: with a short skirt
+2025/01/01 08:49:47 [INFO] [CHAT] cheracc.me: with a short skirt
+2025/01/01 08:49:52 [INFO] [CHAT] shawnshitshow: and a long jacket
+2025/01/01 08:49:52 [INFO] [CHAT] shawnshitshow: and a long jacket
+2025/01/01 08:49:52 [INFO] [CHAT] shawnshitshow: and a long jacket
+2025/01/01 08:52:27 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:52:27 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:52:27 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:52:32 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:52:32 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:52:32 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:52:37 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:52:37 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:52:37 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:52:41 [INFO] Sending command to server: saym 
+2025/01/01 08:52:41 logger.go:81: [ERROR] error calling SendCommand(): rpc error: code = Unknown desc = [ERROR] no command found: saym
+2025/01/01 08:52:42 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:52:42 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:52:42 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:52:47 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:52:47 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:52:47 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:52:52 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:52:52 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:52:52 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:52:57 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:52:57 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:52:57 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:53:02 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:53:02 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:53:02 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:53:07 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:53:07 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:53:07 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:53:12 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:53:12 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:53:12 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:53:17 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:53:17 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:53:17 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:53:22 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:53:22 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:53:22 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:53:27 [INFO] [CHAT] cheracc.me: m
+2025/01/01 08:53:27 [INFO] [CHAT] cheracc.me: m
+2025/01/01 08:53:27 [INFO] [CHAT] cheracc.me: m
+2025/01/01 08:53:32 [INFO] [CHAT] cheracc.me: n
+2025/01/01 08:53:32 [INFO] [CHAT] cheracc.me: n
+2025/01/01 08:53:32 [INFO] [CHAT] cheracc.me: n
+2025/01/01 08:53:37 [INFO] [CHAT] cheracc.me: o
+2025/01/01 08:53:37 [INFO] [CHAT] cheracc.me: o
+2025/01/01 08:53:37 [INFO] [CHAT] cheracc.me: o
+2025/01/01 08:53:42 [INFO] [CHAT] cheracc.me: p
+2025/01/01 08:53:42 [INFO] [CHAT] cheracc.me: p
+2025/01/01 08:53:42 [INFO] [CHAT] cheracc.me: p
+2025/01/01 08:53:47 [INFO] [CHAT] cheracc.me: q
+2025/01/01 08:53:47 [INFO] [CHAT] cheracc.me: q
+2025/01/01 08:53:47 [INFO] [CHAT] cheracc.me: q
+2025/01/01 08:53:52 [INFO] [CHAT] cheracc.me: r
+2025/01/01 08:53:52 [INFO] [CHAT] cheracc.me: r
+2025/01/01 08:53:52 [INFO] [CHAT] cheracc.me: r
+2025/01/01 08:53:57 [INFO] [CHAT] cheracc.me: s
+2025/01/01 08:53:57 [INFO] [CHAT] cheracc.me: s
+2025/01/01 08:53:57 [INFO] [CHAT] cheracc.me: s
+2025/01/01 08:54:02 [INFO] [CHAT] cheracc.me: t
+2025/01/01 08:54:02 [INFO] [CHAT] cheracc.me: t
+2025/01/01 08:54:02 [INFO] [CHAT] cheracc.me: t
+2025/01/01 08:54:07 [INFO] [CHAT] cheracc.me: u
+2025/01/01 08:54:07 [INFO] [CHAT] cheracc.me: u
+2025/01/01 08:54:07 [INFO] [CHAT] cheracc.me: u
+2025/01/01 08:54:12 [INFO] [CHAT] cheracc.me: v
+2025/01/01 08:54:12 [INFO] [CHAT] cheracc.me: v
+2025/01/01 08:54:12 [INFO] [CHAT] cheracc.me: v
+2025/01/01 08:54:17 [INFO] [CHAT] cheracc.me: w
+2025/01/01 08:54:17 [INFO] [CHAT] cheracc.me: w
+2025/01/01 08:54:17 [INFO] [CHAT] cheracc.me: w
+2025/01/01 08:54:22 [INFO] [CHAT] cheracc.me: x
+2025/01/01 08:54:22 [INFO] [CHAT] cheracc.me: x
+2025/01/01 08:54:22 [INFO] [CHAT] cheracc.me: x
+2025/01/01 08:54:27 [INFO] [CHAT] cheracc.me: y
+2025/01/01 08:54:27 [INFO] [CHAT] cheracc.me: y
+2025/01/01 08:54:27 [INFO] [CHAT] cheracc.me: y
+2025/01/01 08:54:32 [INFO] [CHAT] cheracc.me: z
+2025/01/01 08:54:32 [INFO] [CHAT] cheracc.me: z
+2025/01/01 08:54:32 [INFO] [CHAT] cheracc.me: z
+2025/01/01 08:55:15 [INFO] Sending command to server:  
+2025/01/01 08:55:19 [INFO] New Logger started at 2025-01-01 08:55:19.5544268 -0500 EST m=+0.007239401
+2025/01/01 08:55:19 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=8sUCQQMYtgw7ZcMBnB0jAg%3D%3D
+
+2025/01/01 08:55:24 [INFO] Received player data for player cheracc(b609b24e-26ab-4f77-83c5-e91627bc3e4a) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 08:55:24 [INFO] Logged in as cheracc(b609b24e-26ab-4f77-83c5-e91627bc3e4a)
+2025/01/01 08:55:29 [INFO] Joined chat.
+2025/01/01 08:55:29 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:55:29 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:55:29 [INFO] [CHAT] cheracc.me: a
+2025/01/01 08:55:30 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:55:31 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:55:32 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:55:33 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:55:34 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:55:34 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:55:34 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:55:34 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:55:35 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:55:36 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:55:38 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:55:38 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:55:39 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:55:39 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:55:39 [INFO] [CHAT] cheracc.me: c
+2025/01/01 08:55:44 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:55:44 [INFO] [CHAT] cheracc.me: d
+2025/01/01 08:55:49 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:55:49 [INFO] [CHAT] cheracc.me: e
+2025/01/01 08:55:54 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:55:54 [INFO] [CHAT] cheracc.me: f
+2025/01/01 08:55:59 [INFO] [CHAT] cheracc: a
+2025/01/01 08:55:59 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:55:59 [INFO] [CHAT] cheracc: b
+2025/01/01 08:55:59 [INFO] [CHAT] cheracc.me: g
+2025/01/01 08:56:01 [INFO] [CHAT] cheracc: c
+2025/01/01 08:56:02 [INFO] [CHAT] cheracc: d
+2025/01/01 08:56:03 [INFO] [CHAT] cheracc: e
+2025/01/01 08:56:04 [INFO] [CHAT] cheracc: f
+2025/01/01 08:56:04 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:56:04 [INFO] [CHAT] cheracc.me: h
+2025/01/01 08:56:05 [INFO] [CHAT] cheracc: g
+2025/01/01 08:56:06 [INFO] [CHAT] cheracc: h
+2025/01/01 08:56:07 [INFO] [CHAT] cheracc: i
+2025/01/01 08:56:08 [INFO] [CHAT] cheracc: j
+2025/01/01 08:56:08 [INFO] [CHAT] cheracc: k
+2025/01/01 08:56:09 [INFO] [CHAT] cheracc: l
+2025/01/01 08:56:09 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:56:09 [INFO] [CHAT] cheracc.me: i
+2025/01/01 08:56:13 [INFO] [CHAT] cheracc.me: b
+2025/01/01 08:56:14 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:56:14 [INFO] [CHAT] cheracc.me: j
+2025/01/01 08:56:19 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:56:19 [INFO] [CHAT] cheracc.me: k
+2025/01/01 08:56:24 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:56:24 [INFO] [CHAT] cheracc.me: l
+2025/01/01 08:56:29 [INFO] [CHAT] cheracc: a
+2025/01/01 08:56:29 [INFO] [CHAT] cheracc: a
+2025/01/01 08:56:34 [INFO] [CHAT] cheracc: b
+2025/01/01 08:56:34 [INFO] [CHAT] cheracc: b
+2025/01/01 08:56:44 [INFO] [CHAT] cheracc: c
+2025/01/01 08:56:44 [INFO] [CHAT] cheracc: c
+2025/01/01 08:56:49 [INFO] [CHAT] cheracc: d
+2025/01/01 08:56:49 [INFO] [CHAT] cheracc: d
+2025/01/01 08:56:54 [INFO] [CHAT] cheracc: e
+2025/01/01 08:56:54 [INFO] [CHAT] cheracc: e
+2025/01/01 08:56:59 [INFO] [CHAT] cheracc: f
+2025/01/01 08:57:04 [INFO] [CHAT] cheracc: g
+2025/01/01 08:57:09 [INFO] [CHAT] cheracc: h
+2025/01/01 08:57:14 [INFO] [CHAT] cheracc: i
+2025/01/01 08:57:20 [INFO] [CHAT] cheracc: j
+2025/01/01 08:57:25 [INFO] [CHAT] cheracc: k
+2025/01/01 08:57:30 [INFO] [CHAT] cheracc: l
+2025/01/01 08:57:35 [INFO] [CHAT] cheracc.me: b
+2025/01/01 09:00:01 [INFO] Sending command to server:  
+2025/01/01 09:00:01 [INFO] New Logger started at 2025-01-01 09:00:01.2824891 -0500 EST m=+0.006528201
+2025/01/01 09:00:01 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=bFRREVuKPAssb-rRLoZVgQ%3D%3D
+
+2025/01/01 09:00:06 [INFO] New Logger started at 2025-01-01 09:00:06.3027113 -0500 EST m=+0.006536201
+2025/01/01 09:00:06 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=lS57l2bGqYGuWR5h3VPsNA%3D%3D
+
+2025/01/01 09:00:06 [INFO] [CHAT] cheracc: f
+2025/01/01 09:00:07 [INFO] Sending command to server:  
+2025/01/01 09:00:17 [INFO] New Logger started at 2025-01-01 09:00:17.6418849 -0500 EST m=+0.005998301
+2025/01/01 09:00:17 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=3oLlIY8JS_mdnGHrkcFtvA%3D%3D
+
+2025/01/01 09:00:36 [INFO] Joined chat.
+2025/01/01 09:00:36 [INFO] Received player data for player cheracc(0bd0894c-f3a6-4e05-8013-516eaf5a9f58) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 09:00:36 [INFO] Logged in as cheracc(0bd0894c-f3a6-4e05-8013-516eaf5a9f58)
+2025/01/01 09:00:51 [INFO] Joined chat.
+2025/01/01 09:00:51 [INFO] Received player data for player cheracc(abb6d51c-31fa-4765-bdd1-1bc2a1997d50) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 09:00:51 [INFO] Logged in as cheracc(abb6d51c-31fa-4765-bdd1-1bc2a1997d50)
+2025/01/01 09:00:56 [INFO] Sending command to server: list 
+2025/01/01 09:00:56 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 3 players online
+2025/01/01 09:01:11 [INFO] Sending command to server: list 
+2025/01/01 09:01:11 [INFO] Online Players:
+     shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8), cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+There are 3 players online
+2025/01/01 09:01:16 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:01:16 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:01:20 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:01:20 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:03:31 [INFO] Sending command to server: stop 
+2025/01/01 09:03:32 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:03:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62509->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:37:22 [INFO] New Logger started at 2025-01-01 09:37:22.2561471 -0500 EST m=+0.007564501
+2025/01/01 09:37:22 [INFO] 
+2025/01/01 09:37:22 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=1jO6JfZ5KXQRyIlFI98X7A%3D%3D
+
+2025/01/01 09:37:32 [INFO] Joined chat.
+2025/01/01 09:37:32 [INFO] Received player data for player cheracc(16ccb877-14dc-4e99-b19f-3d2a383d836b) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 09:37:32 [INFO] Logged in as cheracc(16ccb877-14dc-4e99-b19f-3d2a383d836b)
+2025/01/01 09:37:46 [INFO] New Logger started at 2025-01-01 09:37:46.5174111 -0500 EST m=+0.006450201
+2025/01/01 09:37:46 [INFO] 
+2025/01/01 09:37:46 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=TfgAEaDclrSL34YbVs_6dg%3D%3D
+
+2025/01/01 09:37:51 [INFO] Received player data for player shawnshitshow(f8d18e62-4c8f-4d19-b668-97887016cf45) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 09:37:51 [INFO] Logged in as shawnshitshow(f8d18e62-4c8f-4d19-b668-97887016cf45)
+2025/01/01 09:37:56 [INFO] Joined chat.
+2025/01/01 09:38:03 [INFO] New Logger started at 2025-01-01 09:38:03.0311374 -0500 EST m=+0.006449901
+2025/01/01 09:38:03 [INFO] 
+2025/01/01 09:38:03 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=fGeMZodZY1VshBcoXIpmng%3D%3D
+
+2025/01/01 09:38:08 [INFO] Received player data for player cheracc.me(0cd42f6a-cb38-45b6-a1b0-835426269b66) Created at 2024-12-30 17:33:40 -0500 EST
+2025/01/01 09:38:08 [INFO] Logged in as cheracc.me(0cd42f6a-cb38-45b6-a1b0-835426269b66)
+2025/01/01 09:38:13 [INFO] Joined chat.
+2025/01/01 09:38:14 [INFO] Sending command to server: list 
+2025/01/01 09:38:14 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3), cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+There are 3 players online
+2025/01/01 09:38:16 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 09:38:16 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 09:38:16 [INFO] [CHAT] cheracc.me: hi
+2025/01/01 09:42:52 [INFO] [CHAT] cheracc.me: what
+2025/01/01 09:42:52 [INFO] [CHAT] cheracc.me: what
+2025/01/01 09:42:52 [INFO] [CHAT] cheracc.me: what
+2025/01/01 09:43:20 [INFO] [CHAT] cheracc: wake up fam
+2025/01/01 09:43:20 [INFO] [CHAT] cheracc: wake up fam
+2025/01/01 09:43:20 [INFO] [CHAT] cheracc: wake up fam
+2025/01/01 09:44:49 [INFO] [CHAT] shawnshitshow: i can hear you
+2025/01/01 09:44:49 [INFO] [CHAT] shawnshitshow: i can hear you
+2025/01/01 09:44:49 [INFO] [CHAT] shawnshitshow: i can hear you
+2025/01/01 09:45:16 [INFO] [CHAT] cheracc: GLOSSER STEEL
+2025/01/01 09:45:16 [INFO] [CHAT] cheracc: GLOSSER STEEL
+2025/01/01 09:45:16 [INFO] [CHAT] cheracc: GLOSSER STEEL
+2025/01/01 09:45:37 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:45:37 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:45:37 [INFO] [CHAT] cheracc: hi
+2025/01/01 09:56:32 [INFO] Sending command to server: stop 
+2025/01/01 09:56:32 logger.go:81: [ERROR] error calling Authorize(): rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62990->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:32 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:32 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:32 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62990->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62990->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:62990->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:33 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:34 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:35 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:36 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:36 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:36 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:37 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:37 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63000->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:37 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:38 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:38 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:39 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:39 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:40 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:56:40 logger.go:74: [ERROR] rpc error: code = Unavailable desc = error reading from server: read tcp [::1]:63001->[::1]:50051: wsarecv: An existing connection was forcibly closed by the remote host.
+2025/01/01 09:57:16 [INFO] New Logger started at 2025-01-01 09:57:16.57537 -0500 EST m=+0.006574801
+2025/01/01 09:57:16 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=f3g5FUwV4lCmqxb9buuTLA%3D%3D
+
+2025/01/01 09:57:21 [INFO] Received player data for player cheracc(54dfb8b9-3179-4bd2-9942-483f0227c9eb) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 09:57:21 [INFO] Logged in as cheracc(54dfb8b9-3179-4bd2-9942-483f0227c9eb)
+2025/01/01 09:57:26 [INFO] Joined chat.
+2025/01/01 10:11:00 [INFO] Sending command to server: stop 
+2025/01/01 10:11:29 [INFO] New Logger started at 2025-01-01 10:11:29.3189688 -0500 EST m=+0.006628401
+2025/01/01 10:11:29 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=anrEnunlqCWk3APjoHV2aQ%3D%3D
+
+2025/01/01 10:11:34 [INFO] Received player data for player cheracc(b5017627-425d-4818-9303-84e01a79dba6) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 10:11:34 [INFO] Logged in as cheracc(b5017627-425d-4818-9303-84e01a79dba6)
+2025/01/01 10:11:39 [INFO] Joined chat.
+2025/01/01 10:16:52 [INFO] New Logger started at 2025-01-01 10:16:52.7160836 -0500 EST m=+0.007227501
+2025/01/01 10:16:52 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=hY0yAqSdsWikRcQOis0wGw%3D%3D
+
+2025/01/01 10:19:24 [INFO] New Logger started at 2025-01-01 10:19:24.3955828 -0500 EST m=+0.006558801
+2025/01/01 10:19:24 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=S898Vlz6uQnuckG42JMTCA%3D%3D
+
+2025/01/01 10:19:29 [INFO] Received player data for player cheracc(7c656857-a636-4ad4-89f3-a98fe777dc38) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 10:19:29 [INFO] Logged in as cheracc(7c656857-a636-4ad4-89f3-a98fe777dc38)
+2025/01/01 10:19:34 [INFO] Joined chat.
+2025/01/01 10:30:10 [INFO] Sending command to server: stop 
