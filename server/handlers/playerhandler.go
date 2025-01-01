@@ -24,6 +24,15 @@ type OnlinePlayers struct {
 	players []*fortress.Player
 }
 
+func (o *OnlinePlayers) IsOnline(playerId string) bool {
+	o.RLock()
+	for _, p := range *o.GetOnlinePlayers() {
+		if p.GetName() == playerId {
+			return true
+		}
+	}
+	return false
+}
 func (o *OnlinePlayers) GetOnlinePlayers() *[]*fortress.Player {
 	o.RLock()
 	defer o.RUnlock()
@@ -58,6 +67,7 @@ func NewPlayerHandler(sqliteHandler *SqliteHandler, logger *fortress.Logger) *Pl
 	go func() {
 		time.Sleep(1 * time.Minute)
 		for {
+			handler.PurgeInactivePlayers()
 			handler.SaveAllPlayersToDb()
 			time.Sleep(time.Minute)
 		}
@@ -154,6 +164,8 @@ func (h *PlayerHandler) PurgeInactivePlayers() {
 
 	for i, p := range *h.GetOnlinePlayers() {
 		if p.TimeSinceLastRead() > idleTimeLimit {
+			h.Logf("Disconnecting player %s(%s) due to inactivity", p.GetName(), p.GetPlayerId())
+			p.SetSessionToken("")
 			toRemove = append(toRemove, i)
 		}
 	}
