@@ -3,6 +3,7 @@ package handlers
 import (
 	"context"
 	"fmt"
+	"sync"
 	"time"
 
 	"github.com/cheracc/fortress-grpc"
@@ -17,14 +18,19 @@ type ChatHandler struct {
 }
 
 type ChatChannel struct {
+	*sync.Mutex
 	members []ChannelMember
 }
 
 func (c *ChatChannel) addMember(m ChannelMember, playerName string) {
 	c.sendMessage(fmt.Sprintf("%s has joined chat", playerName), "SERVER")
+	c.Lock()
+	defer c.Unlock()
 	c.members = append(c.members, m)
 }
 func (c *ChatChannel) sendMessage(message string, playerName string) {
+	c.Lock()
+	defer c.Unlock()
 	for _, m := range c.members {
 		m.stream.Send(&fgrpc.ChatMessage{Message: message, SendingPlayerName: playerName})
 	}
@@ -37,7 +43,7 @@ type ChannelMember struct {
 }
 
 func NewChatHandler(logger *fortress.Logger, auth *AuthHandler) *ChatHandler {
-	h := &ChatHandler{fgrpc.UnimplementedChatServer{}, auth, logger, ChatChannel{[]ChannelMember{}}}
+	h := &ChatHandler{fgrpc.UnimplementedChatServer{}, auth, logger, ChatChannel{&sync.Mutex{}, []ChannelMember{}}}
 
 	return h
 }

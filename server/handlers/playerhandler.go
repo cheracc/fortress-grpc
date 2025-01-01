@@ -2,6 +2,8 @@ package handlers
 
 import (
 	"context"
+	"slices"
+	"sync"
 	"time"
 
 	"github.com/cheracc/fortress-grpc"
@@ -14,11 +16,44 @@ type PlayerHandler struct {
 	*SqliteHandler
 	*AuthHandler
 	*fortress.Logger
+	OnlinePlayers
+}
+
+type OnlinePlayers struct {
+	*sync.RWMutex
 	players []*fortress.Player
 }
 
+func (o *OnlinePlayers) GetOnlinePlayers() *[]*fortress.Player {
+	o.RLock()
+	defer o.RUnlock()
+	return &o.players
+}
+func (o *OnlinePlayers) AddOnlinePlayer(player *fortress.Player) {
+	o.Lock()
+	defer o.Unlock()
+	o.players = append(o.players, player)
+}
+func (o *OnlinePlayers) updateOnlinePlayer(player *fortress.Player) {
+	var toRemove int = -1
+	for i, p := range *o.GetOnlinePlayers() {
+		if p.GetPlayerId() == player.GetPlayerId() {
+			toRemove = i
+			break
+		}
+	}
+
+	o.Lock()
+	defer o.Unlock()
+	if toRemove >= 0 {
+		o.players = slices.Delete(o.players, toRemove, toRemove+1) // remove the player if it was found
+	}
+	o.players = append(o.players, player)
+}
+
 func NewPlayerHandler(sqliteHandler *SqliteHandler, logger *fortress.Logger) *PlayerHandler {
-	handler := &PlayerHandler{fgrpc.UnimplementedPlayerServer{}, sqliteHandler, nil, logger, []*fortress.Player{}}
+	players := OnlinePlayers{RWMutex: &sync.RWMutex{}, players: make([]*fortress.Player, 0)}
+	handler := &PlayerHandler{SqliteHandler: sqliteHandler, Logger: logger, OnlinePlayers: players}
 
 	go func() {
 		time.Sleep(1 * time.Minute)
@@ -46,10 +81,6 @@ func (h *PlayerHandler) GetPlayerData(ctx context.Context, playerInfo *fgrpc.Pla
 
 	payload := &fgrpc.PlayerMessage{PlayerId: p.GetPlayerId(), Name: p.GetName(), CreatedAt: p.GetCreatedAt().Unix()}
 	return payload, nil
-}
-
-func (h *PlayerHandler) GetOnlinePlayers() *[]*fortress.Player {
-	return &h.players
 }
 
 // this error gets passed back to the user/client
@@ -104,31 +135,33 @@ func (h *PlayerHandler) registerNewPlayer(player *fortress.Player, saveToDb bool
 
 func (h *PlayerHandler) SaveAllPlayersToDb() {
 	for _, p := range *h.GetOnlinePlayers() {
-		if time.Since(p.UpdatedAt) < 1*time.Minute {
+		if p.TimeSinceLastRead() < 1*time.Minute {
 			h.SqliteHandler.UpdatePlayerToDb(p)
 		}
 	}
-}
-
-func (h *PlayerHandler) updateOnlinePlayer(player *fortress.Player) {
-	var toRemove int = -1
-	for i, p := range h.players {
-		if p.GetPlayerId() == player.GetPlayerId() {
-			toRemove = i
-			break
-		}
-	}
-	if toRemove >= 0 {
-		h.players = append(h.players[:toRemove], h.players[toRemove+1:]...) // remove the player if it was found
-		h.Logf("Updating online player: %s(%s)", player.GetName(), player.GetPlayerId())
-	} else {
-		h.Logf("Loaded player: %s(%s)", player.GetName(), player.GetPlayerId())
-	}
-	h.players = append(h.players, player)
 }
 
 // GetPlayerNameFromId returns the name associated with the given playerId, optionally checking the database. Returns "" if no player is found
 func (h *PlayerHandler) GetPlayerNameFromId(playerId string, checkDatabase bool) string {
 	p, _ := h.GetPlayer(PlayerFilter{playerId: playerId}, checkDatabase)
 	return p.GetName()
+}
+
+// PurgeInactivePlayers removes all players from the active playerlist that have been idle for 5+ minutes
+func (h *PlayerHandler) PurgeInactivePlayers() {
+	const idleTimeLimit = 5 * time.Minute
+	toRemove := []int{}
+
+	for i, p := range *h.GetOnlinePlayers() {
+		if p.TimeSinceLastRead() > idleTimeLimit {
+			toRemove = append(toRemove, i)
+		}
+	}
+
+	h.Lock()
+	defer h.Unlock()
+
+	for _, j := range toRemove {
+		h.players = slices.Delete(h.players, j, j+1)
+	}
 }

@@ -68,7 +68,6 @@ func NewOauthHandler(logger *fortress.Logger) OauthHandler {
 }
 
 func (h *OauthHandler) OauthGoogleCallback(w http.ResponseWriter, r *http.Request) {
-	h.Log("Received callback from Google:")
 	receivedState := r.FormValue("state") // the random state we attached to the login url
 
 	auth := h.authenticatingPlayers[receivedState]
@@ -84,7 +83,11 @@ func (h *OauthHandler) OauthGoogleCallback(w http.ResponseWriter, r *http.Reques
 	auth.avatarUrl = data.Picture
 
 	// authorize this player to login
-	player, _ := h.GetPlayer(PlayerFilter{googleId: data.Id}, true)
+	player, isNew := h.GetPlayer(PlayerFilter{googleId: data.Id}, true)
+	if isNew {
+		player.SetGoogleId(data.Id)
+	}
+	player.SetAvatarUrl(data.Picture)
 	h.AuthorizePlayer(player)
 	auth.sessionToken = player.GetSessionToken()
 
