@@ -4489,3 +4489,90 @@
 2025/01/01 10:30:10 [INFO] Looking up command stop
 2025/01/01 10:30:10 [INFO] Checking command stop
 2025/01/01 10:30:10 [INFO] Executing command stop for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:30:18 [INFO] New Logger started at 2025-01-01 10:30:18.0554233 -0500 EST m=+0.005990101
+2025/01/01 10:30:18 [INFO] Finished configuring Oauth Handler
+2025/01/01 10:30:18 [INFO] Started AuthHandler
+2025/01/01 10:30:18 [INFO] Starting Oauth http server, listening on localhost:8000
+2025/01/01 10:30:18 [INFO] initialized database and table
+2025/01/01 10:30:18 [INFO] Registered command stop
+2025/01/01 10:30:18 [INFO] Registered command name
+2025/01/01 10:30:18 [INFO] Registered command list
+2025/01/01 10:30:18 [INFO] Starting gRPC Server
+2025/01/01 10:30:25 [INFO] Recieved authorization request from [::1]:64065 (42d212f7-b19c-4dfd-aee7-ceda0ee50fbe)[unverified]
+2025/01/01 10:30:28 [INFO] Received callback from Google:
+2025/01/01 10:30:28 [INFO] Received state is valid, requesting user data from Google
+2025/01/01 10:30:29 [INFO] Received data: &{109608847173090780896 https://lh3.googleusercontent.com/a-/ALV-UjXuhG4ALg_PexSAbVymbTz7SaVicT3iJWG79NBx78NMWIuyzyKl=s96-c}
+2025/01/01 10:30:29 [INFO] Loaded player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:30:29 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU3Mjl9.7CIYbXDT6bx1G6HNyeh4dp44W0Bl3Yfz8mnIxTNeA3zFEJUOjlTbAbtlvK4f9MwiuCqXD943cb-ZDJW3qoz1LQ for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
+2025/01/01 10:30:29 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:30:29 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:30:30 [INFO] Recieved authorization request from [::1]:64065 (42d212f7-b19c-4dfd-aee7-ceda0ee50fbe)[unverified]
+2025/01/01 10:30:43 [INFO] Recieved authorization request from [::1]:64073 (8edecc78-2fbe-44b0-af90-27d49400b4d5)[unverified]
+2025/01/01 10:30:46 [INFO] Received callback from Google:
+2025/01/01 10:30:46 [INFO] Received state is valid, requesting user data from Google
+2025/01/01 10:30:46 [INFO] Received data: &{117022108063552620271 https://lh3.googleusercontent.com/a-/ALV-UjVKRLyXcEpXyY5KinhfuL34i2CMhfoRGpFNZrgLn7knvyJyRQ=s96-c}
+2025/01/01 10:30:46 [INFO] Loaded player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:30:46 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDU3NDZ9.GhRwv1jhOt8HWBVD1bLqbYWn3LSjQfHYSkEhkUfK_D_Sb_mLOASj3ox2ieff8UW8-WXnxf_gS6N-afJ6zOSsug for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:30:46 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:30:46 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:30:48 [INFO] Recieved authorization request from [::1]:64073 (8edecc78-2fbe-44b0-af90-27d49400b4d5)[unverified]
+2025/01/01 10:31:18 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:31:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:31:21 [INFO] Loaded commands: [0xc000041200 0xc000041220 0xc000041240]
+2025/01/01 10:31:21 [INFO] Received command execution request list  from player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:31:21 [INFO] Looking up command list
+2025/01/01 10:31:21 [INFO] Checking command stop
+2025/01/01 10:31:21 [INFO] Checking command name
+2025/01/01 10:31:21 [INFO] Checking command list
+2025/01/01 10:31:21 [INFO] Executing command list for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:31:30 [INFO] Recieved authorization request from [::1]:64065 (2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[unverified]
+2025/01/01 10:31:30 [INFO] This request has a session token attached
+2025/01/01 10:31:30 [INFO] Player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[verified] already has a valid token
+2025/01/01 10:31:30 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU3OTB9.kM45rNjiHEMUDNpSj2GgEIfuT8KX9YhGtww6GgQL8lOkCA3E-UrdIZ6k8-Lq0eRyrIpb-l4bILLtJd-6lFtE_A for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
+2025/01/01 10:31:30 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:31:30 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:31:38 [INFO] Recieved authorization request from [::1]:64077 (adbfbc55-0478-45ef-a900-b3d62f3204fe)[unverified]
+2025/01/01 10:31:41 [INFO] Received callback from Google:
+2025/01/01 10:31:41 [INFO] Received state is valid, requesting user data from Google
+2025/01/01 10:31:42 [INFO] Received data: &{118096511673031640188 https://lh3.googleusercontent.com/a-/ALV-UjXwjQId9bEtp-L87r4EF26mNpUb9JV7vFj-f9BizvXzpKBkkQ=s96-c}
+2025/01/01 10:31:42 [INFO] Loaded player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:31:42 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDU4MDJ9.Tr2E2__-NHSuwr5Kp9gMuSZ8dDgjaHia3zXV0ZnIVyJLukm_BX1E6UmrcOzvuObBW4wdX06BTvz8zRGAyH1Qgw for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:31:42 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:31:42 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:31:43 [INFO] Recieved authorization request from [::1]:64077 (adbfbc55-0478-45ef-a900-b3d62f3204fe)[unverified]
+2025/01/01 10:31:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:31:48 [INFO] This request has a session token attached
+2025/01/01 10:31:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:31:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDU4MDh9.DtTs2758hSO_63jc1rBxLKNPZwlR9PwNffSexCIXC4B7XHJutIQPmkvE0u0tWTlWlOYh8YDex5Ma0GObUp0vNA for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:31:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:31:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:32:18 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:32:18 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:32:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:32:30 [INFO] Recieved authorization request from [::1]:64065 (2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[unverified]
+2025/01/01 10:32:30 [INFO] This request has a session token attached
+2025/01/01 10:32:30 [INFO] Player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[verified] already has a valid token
+2025/01/01 10:32:30 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU4NTB9.MJW7M1d2F16ce3IIDKgV7hmk3nDkObKw8LCgUKxBzzrKS_SNy01jZDKt9ZYvo44Y-qFTGE4rSbL0AwyH_pFDFg for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
+2025/01/01 10:32:30 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:32:30 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:32:43 [INFO] Recieved authorization request from [::1]:64077 (9ca798ce-e446-4714-a05f-cf3ba85677a8)[unverified]
+2025/01/01 10:32:43 [INFO] This request has a session token attached
+2025/01/01 10:32:43 [INFO] Player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)[verified] already has a valid token
+2025/01/01 10:32:43 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDU4NjN9.Z9WSleMu28zUNA5VuAe05b4FAkO88cJZT5zAP-xvbqOlXuMJjKhyJWkEPSXJUpxFpzQnYT6NF67uWRJEeiuZRQ for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:32:43 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:32:43 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:32:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:32:48 [INFO] This request has a session token attached
+2025/01/01 10:32:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:32:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDU4Njh9.pQ82ebJasbxZQ2O05YGWeX9Qi-gVsA-c8JFeq36PVuAIK2-q6amEaH59jZU4hd64UPPPAxzv1vx-iRAYFgm30g for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:32:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:32:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:33:18 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:33:18 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:33:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:33:30 [INFO] Recieved authorization request from [::1]:64065 (2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[unverified]
+2025/01/01 10:33:30 [INFO] This request has a session token attached
+2025/01/01 10:33:30 [INFO] Player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[verified] already has a valid token
+2025/01/01 10:33:30 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU5MTB9.ZgnGJlk2Dc4TXf-joPgo6xHVvjIL3XLoGRvjoMegg2YKXKHCzJB7vS9DdMfbXfED1hKWAIGoKSk2mJdsCL8E9Q for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
+2025/01/01 10:33:30 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:33:30 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)

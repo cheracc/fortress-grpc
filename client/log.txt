@@ -1094,3 +1094,30 @@
 2025/01/01 10:19:29 [INFO] Logged in as cheracc(7c656857-a636-4ad4-89f3-a98fe777dc38)
 2025/01/01 10:19:34 [INFO] Joined chat.
 2025/01/01 10:30:10 [INFO] Sending command to server: stop 
+2025/01/01 10:30:25 [INFO] New Logger started at 2025-01-01 10:30:25.7395949 -0500 EST m=+0.007482701
+2025/01/01 10:30:25 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=MtRmPlCtu81AaO44vKcWEw%3D%3D
+
+2025/01/01 10:30:30 [INFO] Received player data for player cheracc(42d212f7-b19c-4dfd-aee7-ceda0ee50fbe) Created at 2024-12-30 17:31:00 -0500 EST
+2025/01/01 10:30:30 [INFO] Logged in as cheracc(42d212f7-b19c-4dfd-aee7-ceda0ee50fbe)
+2025/01/01 10:30:35 [INFO] Joined chat.
+2025/01/01 10:30:43 [INFO] New Logger started at 2025-01-01 10:30:43.4033602 -0500 EST m=+0.007489201
+2025/01/01 10:30:43 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=t0EZHRvYDmbjepBio7OiUQ%3D%3D
+
+2025/01/01 10:30:48 [INFO] Received player data for player shawnshitshow(8edecc78-2fbe-44b0-af90-27d49400b4d5) Created at 2024-12-30 17:33:19 -0500 EST
+2025/01/01 10:30:48 [INFO] Logged in as shawnshitshow(8edecc78-2fbe-44b0-af90-27d49400b4d5)
+2025/01/01 10:30:53 [INFO] Joined chat.
+2025/01/01 10:30:53 [INFO] [CHAT] SERVER: shawnshitshow has joined chat
+2025/01/01 10:31:21 [INFO] Sending command to server: list 
+2025/01/01 10:31:21 [INFO] Online Players:
+     cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0), shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+There are 2 players online
+2025/01/01 10:31:27 [INFO] [CHAT] shawnshitshow: hi cheracc
+2025/01/01 10:31:27 [INFO] [CHAT] shawnshitshow: hi cheracc
+2025/01/01 10:31:38 [INFO] New Logger started at 2025-01-01 10:31:38.2307701 -0500 EST m=+0.006694101
+2025/01/01 10:31:38 [INFO] Use the following link to log in: https://accounts.google.com/o/oauth2/auth?client_id=774374396854-2s8qkjqdk9urtk4go2giilq7qt99pv4l.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid&state=yxqCeB3oc1c00nvW3cTYfw%3D%3D
+
+2025/01/01 10:31:43 [INFO] Received player data for player cheracc.me(adbfbc55-0478-45ef-a900-b3d62f3204fe) Created at 2024-12-30 17:33:40 -0500 EST
+2025/01/01 10:31:43 [INFO] Logged in as cheracc.me(adbfbc55-0478-45ef-a900-b3d62f3204fe)
+2025/01/01 10:31:48 [INFO] Joined chat.
+2025/01/01 10:31:48 [INFO] [CHAT] SERVER: cheracc.me has joined chat
+2025/01/01 10:31:48 [INFO] [CHAT] SERVER: cheracc.me has joined chat
