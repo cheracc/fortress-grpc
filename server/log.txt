@@ -4576,3 +4576,65 @@
 2025/01/01 10:33:30 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU5MTB9.ZgnGJlk2Dc4TXf-joPgo6xHVvjIL3XLoGRvjoMegg2YKXKHCzJB7vS9DdMfbXfED1hKWAIGoKSk2mJdsCL8E9Q for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
 2025/01/01 10:33:30 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
 2025/01/01 10:33:30 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:33:43 [INFO] Recieved authorization request from [::1]:64077 (9ca798ce-e446-4714-a05f-cf3ba85677a8)[unverified]
+2025/01/01 10:33:43 [INFO] This request has a session token attached
+2025/01/01 10:33:43 [INFO] Player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)[verified] already has a valid token
+2025/01/01 10:33:43 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDU5MjN9.5Vtdq0KqlLCG8PRg-O43cP_D6Aq1zHYwqDKwg-CJH86z6o7_tydvu7eGby-1Vv99IyWWeMnuNtDDFk8iNLUt_w for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:33:43 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:33:43 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:33:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:33:48 [INFO] This request has a session token attached
+2025/01/01 10:33:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:33:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDU5Mjh9.0QCdzXM7YcJcNnFN2DVsyFogmTi9RYVJfcxd57sEXrRJzrdjOWm6zmx0NfIwrpBxWxgO3ygTpdstwMGAJLn_Zg for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:33:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:33:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:34:18 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:34:18 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:34:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:34:30 [INFO] Recieved authorization request from [::1]:64065 (2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[unverified]
+2025/01/01 10:34:30 [INFO] This request has a session token attached
+2025/01/01 10:34:30 [INFO] Player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)[verified] already has a valid token
+2025/01/01 10:34:30 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiIyYzk5YzNkMC1lYmFhLTRjOTUtODNiZi05YzQ2MGE0N2EzZjAiLCJleHAiOjE3MzU3NDU5NzB9.lUiGRxe44f4rae8pAFARWyu5TsNVlJ37ORwWHWdO4rsSoZhXyQ72AMhQNtDi0g3oS9D2ulZ77BY0tsBOBsecRQ for player 2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0
+2025/01/01 10:34:30 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:34:30 [INFO] Updating online player: cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:34:43 [INFO] Recieved authorization request from [::1]:64077 (9ca798ce-e446-4714-a05f-cf3ba85677a8)[unverified]
+2025/01/01 10:34:43 [INFO] This request has a session token attached
+2025/01/01 10:34:43 [INFO] Player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)[verified] already has a valid token
+2025/01/01 10:34:43 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDU5ODN9.NLyiYDccvJ91VWui7QuPNQ9FjLJPTUQP8JhXlSci_IB4XXnRu6H_g_7Ok0G44lBLZO-k-Zes-afQvAQ0HQ3C_w for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:34:43 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:34:43 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:34:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:34:48 [INFO] This request has a session token attached
+2025/01/01 10:34:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:34:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDU5ODh9.cUpyZdBIPdaABjUO81lvj8kZlbTMaBDA5zlbawx_kIJUWqbJdrNYS7B_4ZHhEhnqFoxTKYVg5x-nkD-ERcT1aQ for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:34:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:34:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:35:18 [INFO] Updated database record for player cheracc(2c99c3d0-ebaa-4c95-83bf-9c460a47a3f0)
+2025/01/01 10:35:18 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:35:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:35:43 [INFO] Recieved authorization request from [::1]:64077 (9ca798ce-e446-4714-a05f-cf3ba85677a8)[unverified]
+2025/01/01 10:35:43 [INFO] This request has a session token attached
+2025/01/01 10:35:43 [INFO] Player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)[verified] already has a valid token
+2025/01/01 10:35:43 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDYwNDN9.g22Nd5EWkJl5-cMjPOOKJWZIjAOVErjYDjMdZZYDXKa0fRSneD9N1wpW6u2iYeNgz2fp9aQC6TAWs4P2kQJY2Q for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:35:43 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:35:43 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:35:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:35:48 [INFO] This request has a session token attached
+2025/01/01 10:35:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:35:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDYwNDh9.0n6jdwWI9z7Bj3K4dJADHRuDhqeY4fzRzN6skHGPH-9vfbPrp7jM9VESJWU9pip8GEskikQeT4WcbcM2mS161g for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:35:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:35:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:36:18 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:36:18 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:36:43 [INFO] Recieved authorization request from [::1]:64077 (9ca798ce-e446-4714-a05f-cf3ba85677a8)[unverified]
+2025/01/01 10:36:43 [INFO] This request has a session token attached
+2025/01/01 10:36:43 [INFO] Player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)[verified] already has a valid token
+2025/01/01 10:36:43 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI5Y2E3OThjZS1lNDQ2LTQ3MTQtYTA1Zi1jZjNiYTg1Njc3YTgiLCJleHAiOjE3MzU3NDYxMDN9.xckR6af89kK7l6D9NpOh8E1U5S7xvUXT47-0w0yikSSmgEU9cfg6aoPlcNr3vK2TLCRFAJ-czRFfwrH-7Tk6pg for player 9ca798ce-e446-4714-a05f-cf3ba85677a8
+2025/01/01 10:36:43 [INFO] Updated database record for player cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:36:43 [INFO] Updating online player: cheracc.me(9ca798ce-e446-4714-a05f-cf3ba85677a8)
+2025/01/01 10:36:48 [INFO] Recieved authorization request from [::1]:64073 (70717f3c-c88c-460a-a238-efb09cba5ab3)[unverified]
+2025/01/01 10:36:48 [INFO] This request has a session token attached
+2025/01/01 10:36:48 [INFO] Player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)[verified] already has a valid token
+2025/01/01 10:36:48 [INFO] created new JWT eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF5ZXItaWQiOiI3MDcxN2YzYy1jODhjLTQ2MGEtYTIzOC1lZmIwOWNiYTVhYjMiLCJleHAiOjE3MzU3NDYxMDh9.RaV-LUz7Zes7DeKcIxOvZHWAW-kmXLw_PQTEQr2L5fpEFeGR9D0RhSAeWGikq9LmKrXo9YgXTugtGUn-PfUwIA for player 70717f3c-c88c-460a-a238-efb09cba5ab3
+2025/01/01 10:36:48 [INFO] Updated database record for player shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
+2025/01/01 10:36:48 [INFO] Updating online player: shawnshitshow(70717f3c-c88c-460a-a238-efb09cba5ab3)
