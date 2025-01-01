@@ -1,6 +1,7 @@
 package fortress
 
 import (
+	"sync"
 	"time"
 
 	"github.com/google/uuid"
@@ -8,6 +9,7 @@ import (
 
 // a player object. used by both client and server
 type Player struct {
+	*sync.RWMutex
 	playerId     string
 	googleId     string
 	name         string
@@ -22,6 +24,7 @@ type Player struct {
 func NewPlayer() *Player {
 	now := time.Now().UTC()
 	player := Player{
+		RWMutex:   &sync.RWMutex{},
 		playerId:  generatePlayerID(),
 		CreatedAt: now,
 		UpdatedAt: now,
@@ -32,7 +35,7 @@ func NewPlayer() *Player {
 }
 
 func LoadPlayer(pId string, gId string, name string, sToken string, aUrl string, created time.Time, updated time.Time, read time.Time) Player {
-	p := Player{pId, gId, name, sToken, aUrl, created, updated, read}
+	p := Player{&sync.RWMutex{}, pId, gId, name, sToken, aUrl, created, updated, read}
 	p.setAccessed()
 	return p
 }
@@ -42,69 +45,103 @@ func generatePlayerID() string {
 }
 
 func (p *Player) setUpdated() {
+	p.Lock()
 	p.UpdatedAt = time.Now().UTC()
+	p.Unlock()
 }
 
 func (p *Player) setAccessed() {
+	p.Lock()
 	p.LastRead = time.Now().UTC()
+	p.Unlock()
 }
 
 func (p *Player) GetPlayerId() string {
-	defer p.setAccessed()
-	return p.playerId
+	p.RLock()
+	playerId := p.playerId
+	p.RUnlock()
+	p.setAccessed()
+	return playerId
 }
 
 func (p *Player) SetPlayerId(id string) {
+	p.Lock()
 	p.playerId = id
+	p.Unlock()
 	p.setUpdated()
 }
 
 func (p *Player) GetGoogleId() string {
-	defer p.setAccessed()
-	return p.googleId
+	p.RLock()
+	googleId := p.googleId
+	p.RUnlock()
+	p.setAccessed()
+	return googleId
 }
 
 func (p *Player) SetGoogleId(id string) {
+	p.Lock()
 	p.googleId = id
+	p.Unlock()
 	p.setUpdated()
 }
 
 func (p *Player) GetName() string {
-	defer p.setAccessed()
-	return p.name
+	p.RLock()
+	name := p.name
+	p.RUnlock()
+	p.setAccessed()
+	return name
 }
 
 func (p *Player) SetName(name string) {
+	p.Lock()
 	p.name = name
+	p.Unlock()
 	p.setUpdated()
 }
 
 func (p *Player) GetSessionToken() string {
-	defer p.setAccessed()
-	return p.sessionToken
+	p.RLock()
+	sessionToken := p.sessionToken
+	p.RUnlock()
+	p.setAccessed()
+	return sessionToken
 }
 
 func (p *Player) SetSessionToken(tokenString string) {
+	p.Lock()
 	p.sessionToken = tokenString
+	p.Unlock()
 	p.setUpdated()
 }
 
 func (p *Player) GetAvatarUrl() string {
-	defer p.setAccessed()
-	return p.avatarURL
+	p.RLock()
+	avatarURL := p.avatarURL
+	p.RUnlock()
+	p.setAccessed()
+	return avatarURL
 }
 
 func (p *Player) SetAvatarUrl(url string) {
 	p.setUpdated()
+	p.Lock()
 	p.avatarURL = url
+	p.Unlock()
 }
 
 func (p *Player) GetCreatedAt() time.Time {
-	defer p.setAccessed()
-	return p.CreatedAt
+	p.RLock()
+	createdAt := p.CreatedAt
+	p.RUnlock()
+	p.setAccessed()
+	return createdAt
 }
 
 func (p *Player) SetCreatedAt(time time.Time) {
 	p.setUpdated()
+	p.Lock()
 	p.CreatedAt = time
+	p.Unlock()
 }
