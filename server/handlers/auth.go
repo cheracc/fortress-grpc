@@ -47,7 +47,7 @@ func (a *Auth) isComplete() bool {
 func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInfo) (*fgrpc.AuthInfo, error) {
 	ip, _ := peer.FromContext(ctx)
 	unverifiedPlayerId := playerInfo.GetId() // if this is the first time a user is connecting, this is just a randomly generated uuid from the client
-	h.Logf("Recieved authorization request from %s (%s)[unverified]", ip.Addr.String(), unverifiedPlayerId)
+	h.Logf("Recieved authorization request from %s", ip.Addr.String())
 
 	authInfo := fgrpc.AuthInfo{PlayerID: unverifiedPlayerId} // set up the response payload
 
@@ -72,7 +72,7 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 			return &authInfo, nil
 		}
 		if auth.isComplete() { // this authorization is complete (logged in with google). load their player and send them a session token
-			player, _ := h.GetPlayerByGoogleID(auth.googleId) // fetching by google id since its trusted
+			player, _ := h.GetPlayer(PlayerFilter{googleId: auth.googleId}, true) // fetching by google id since its trusted
 			player.SetAvatarUrl(auth.avatarUrl)
 			player.SetSessionToken(auth.sessionToken)
 			authInfo.PlayerID = player.GetPlayerId()
@@ -89,12 +89,11 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 	}
 
 	// if reaching here, the user has an actual session token, but we don't know if its valid
-	h.Log("This request has a session token attached")
 	hasValidToken := h.verifySessionToken(receivedSessionToken) // see if this token is valid (and not expired)
 	if hasValidToken {                                          // already had valid token
-		playerId := h.GetPlayerIdFromTokenString(receivedSessionToken) // use the playerId from the session token, as it is signed
-		player, _ := h.GetPlayerByID(playerId, true)                   // log this player in if they are not already
-		h.Logf("Player %s(%s)[verified] already has a valid token", player.GetName(), playerId)
+		playerId := h.GetPlayerIdFromTokenString(receivedSessionToken)   // use the playerId from the session token, as it is signed
+		player, _ := h.GetPlayer(PlayerFilter{playerId: playerId}, true) // log this player in if they are not already
+		h.Logf("Player %s(%s) refreshed session token", player.GetName(), playerId)
 		h.AuthorizePlayer(player)
 
 		authInfo.PlayerID = player.GetPlayerId()
@@ -156,8 +155,6 @@ func (h *AuthHandler) generateToken(playerId string) string {
 		h.Logf("could not create new jwt for pid %s: %s", playerId, err)
 		return ""
 	}
-
-	h.Logf("created new JWT %s for player %s", tokenString, playerId)
 	return tokenString
 }
 

@@ -42,7 +42,7 @@ func (h *PlayerHandler) GetPlayerData(ctx context.Context, playerInfo *fgrpc.Pla
 		return &fgrpc.PlayerMessage{}, h.Errorf("Server was unable to verify or decode session token %s", tokenString)
 	}
 	// if reaching this point, the session token sent is valid and we can send the requested player data
-	p, _ := h.GetPlayerByID(id, true)
+	p, _ := h.GetPlayer(PlayerFilter{playerId: id}, true)
 
 	payload := &fgrpc.PlayerMessage{PlayerId: p.GetPlayerId(), Name: p.GetName(), CreatedAt: p.GetCreatedAt().Unix()}
 	return payload, nil
@@ -64,20 +64,21 @@ func (h *PlayerHandler) RenamePlayer(player *fortress.Player, newName string) er
 	return nil
 }
 
-// GetPlayerByID checks currently online players for one with playerId = id. If checkDatabase is true, it will also check
-// the sqlite database for that playerId. If it does not find a player, it creates a new one. If it either loaded from the database
+// GetPlayer checks currently online players for one that matches any field in the provided playerfilter. If checkDatabase is true, it will also check
+// the sqlite database using the same filter. If it does not find a player, it creates a new one. If it either loaded from the database
 // or created it, it adds that player to onlinePlayers. it returns the player as well as whether that player was newly created
-func (h *PlayerHandler) GetPlayerByID(id string, checkDatabase bool) (*fortress.Player, bool) {
+func (h *PlayerHandler) GetPlayer(filter PlayerFilter, checkDatabase bool) (*fortress.Player, bool) {
 	for _, p := range *h.GetOnlinePlayers() {
-		if p.GetPlayerId() == id {
+		if p.GetPlayerId() == filter.playerId || p.GetName() == filter.name || p.GetGoogleId() == filter.googleId {
 			return p, false
 		}
 	}
 	// check the db
 	if checkDatabase {
-		p := h.SqliteHandler.LookupPlayerFromDb(PlayerFilter{playerId: id})
+		p := h.SqliteHandler.LookupPlayerFromDb(filter)
 		if p != nil {
 			h.updateOnlinePlayer(p)
+			h.Logf("Loaded player %s(%s) from database.", p.GetName(), p.GetPlayerId())
 			return p, false
 		}
 	}
@@ -85,35 +86,13 @@ func (h *PlayerHandler) GetPlayerByID(id string, checkDatabase bool) (*fortress.
 	//not found, create new
 	p := fortress.NewPlayer()
 
-	if _, err := uuid.Parse(id); err == nil { // if the requested id was a uuid, set the new player to that id, otherwise, keep the generated one
-		p.SetPlayerId(id)
+	if _, err := uuid.Parse(filter.playerId); err == nil { // if the requested id was a uuid, set the new player to that id, otherwise, keep the generated one
+		p.SetPlayerId(filter.playerId)
 	}
 	h.registerNewPlayer(p, true)
-	h.Logf("new player %s created", p.GetPlayerId())
+	h.Logf("Created a new player with ID %s", p.GetPlayerId())
 	return p, true
-}
 
-// returns the player with the given google id. if it doesn't exist, a new one is created and loaded into the database
-func (h *PlayerHandler) GetPlayerByGoogleID(googleId string) (*fortress.Player, bool) {
-	for _, p := range *h.GetOnlinePlayers() {
-		if p.GetGoogleId() == googleId {
-			return p, false
-		}
-	}
-
-	// not loaded, check database
-	p := h.SqliteHandler.LookupPlayerFromDb(PlayerFilter{googleId: googleId})
-	if p != nil {
-		h.updateOnlinePlayer(p)
-		return p, false
-	}
-
-	// none found, make it
-	p = fortress.NewPlayer()
-	p.SetGoogleId(googleId)
-	h.registerNewPlayer(p, true)
-	h.Logf("new player %s created with google id: %s", p.GetPlayerId(), googleId)
-	return p, true
 }
 
 func (h *PlayerHandler) registerNewPlayer(player *fortress.Player, saveToDb bool) {
@@ -150,6 +129,6 @@ func (h *PlayerHandler) updateOnlinePlayer(player *fortress.Player) {
 
 // GetPlayerNameFromId returns the name associated with the given playerId, optionally checking the database. Returns "" if no player is found
 func (h *PlayerHandler) GetPlayerNameFromId(playerId string, checkDatabase bool) string {
-	p, _ := h.GetPlayerByID(playerId, checkDatabase)
+	p, _ := h.GetPlayer(PlayerFilter{playerId: playerId}, checkDatabase)
 	return p.GetName()
 }

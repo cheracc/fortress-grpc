@@ -45,7 +45,6 @@ func (h *CommandHandler) RegisterCommand(command *Command) {
 
 // receives commands from remote users and sends response as a json payload
 func (h *CommandHandler) Command(ctx context.Context, commandInfo *fgrpc.CommandInfo) (*fgrpc.CommandReturn, error) {
-	h.Logf("Loaded commands: %v", h.commands)
 	h.Logf("Received command execution request %s %s from player %s", commandInfo.GetCommandName(), commandInfo.GetCommandArguments(), commandInfo.GetPlayerInfo().GetId())
 
 	c := h.lookupCommand(commandInfo.GetCommandName())
@@ -65,7 +64,7 @@ func (h *CommandHandler) Command(ctx context.Context, commandInfo *fgrpc.Command
 		return &fgrpc.CommandReturn{Success: false, JsonPayload: ""}, h.Error("session token does not match sending player")
 	}
 
-	player, _ := h.PlayerHandler.GetPlayerByID(playerId, false)
+	player, _ := h.PlayerHandler.GetPlayer(PlayerFilter{playerId: playerId}, false)
 	if player == nil {
 		return &fgrpc.CommandReturn{Success: false, JsonPayload: ""}, h.Errorf("could not find an online player with id %s", playerId)
 	}
@@ -78,9 +77,7 @@ func (h *CommandHandler) Command(ctx context.Context, commandInfo *fgrpc.Command
 
 // lookupCommand fetches the command with the given name if it exists
 func (h *CommandHandler) lookupCommand(name string) *Command {
-	h.Logf("Looking up command %s", name)
 	for _, c := range h.commands {
-		h.Logf("Checking command %s", c.Name)
 		if c.Name == name {
 			return c
 		}

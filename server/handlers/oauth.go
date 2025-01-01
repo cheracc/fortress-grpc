@@ -64,7 +64,6 @@ func NewOauthHandler(logger *fortress.Logger) OauthHandler {
 	oauthHandler.httpServer = server
 
 	oauthHandler.oauthStates = make(map[string]string)
-	logger.Log("Finished configuring Oauth Handler")
 	return oauthHandler
 }
 
@@ -74,24 +73,24 @@ func (h *OauthHandler) OauthGoogleCallback(w http.ResponseWriter, r *http.Reques
 
 	auth := h.authenticatingPlayers[receivedState]
 	if auth == nil { // don't recognize this state
-		h.Log("Invalid oath state received")
+		h.Log("Callback from Google contained an oauth state we did not generate, aborting.")
 		return
 	}
 
-	h.Log("Received state is valid, requesting user data from Google")
 	data := h.fetchGoogleDataFromResponse(r.FormValue("code"))
-	h.Logf("Received data: %s", data)
 
 	// set the google id to what we received
 	auth.googleId = data.Id
 	auth.avatarUrl = data.Picture
 
 	// authorize this player to login
-	player, _ := h.GetPlayerByGoogleID(data.Id)
+	player, _ := h.GetPlayer(PlayerFilter{googleId: data.Id}, true)
 	h.AuthorizePlayer(player)
 	auth.sessionToken = player.GetSessionToken()
 
-	fmt.Fprintf(w, "<h1>You may close this tab</h1>")
+	h.Logf("Player %s(%s) logged in via Google (GID:%s)", player.GetName(), player.GetPlayerId(), player.GetGoogleId())
+
+	fmt.Fprintf(w, "<html><body><h1>You have successfully logged in.</h1><br><b>You may close this tab</b></body></html>")
 }
 
 func (h *OauthHandler) fetchGoogleDataFromResponse(code string) *GoogleJson {
