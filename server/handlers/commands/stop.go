@@ -10,7 +10,7 @@ import (
 // StopCommand represents a command used to stop the server
 type StopCommand struct {
 	// CloseDatabaseFunc is used to close the sqlite database before stopping the server
-	CloseDatabaseFunc func() error
+	CloseDatabaseFunc func()
 }
 
 // Execute closes the sqlite database and stops the server (gracefully?)

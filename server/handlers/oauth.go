@@ -26,9 +26,8 @@ var googleOauthConfig = &oauth2.Config{
 }
 
 type OauthHandler struct {
-	httpServer  *http.Server
-	mux         *http.ServeMux
-	oauthStates map[string]string
+	httpServer *http.Server
+	mux        *http.ServeMux
 	*AuthHandler
 	*fortress.Logger
 }
@@ -63,15 +62,13 @@ func NewOauthHandler(logger *fortress.Logger) OauthHandler {
 
 	oauthHandler.httpServer = server
 
-	oauthHandler.oauthStates = make(map[string]string)
 	return oauthHandler
 }
 
 func (h *OauthHandler) OauthGoogleCallback(w http.ResponseWriter, r *http.Request) {
-	h.Log("Received callback from Google:")
 	receivedState := r.FormValue("state") // the random state we attached to the login url
 
-	auth := h.authenticatingPlayers[receivedState]
+	auth := h.GetAuth(receivedState)
 	if auth == nil { // don't recognize this state
 		h.Log("Callback from Google contained an oauth state we did not generate, aborting.")
 		return

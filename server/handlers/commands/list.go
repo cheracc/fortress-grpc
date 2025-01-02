@@ -9,7 +9,7 @@ import (
 // ListCommand represents a command that lists all online players to the user sending the command
 type ListCommand struct {
 	// GetOnlinePlayersFunc is the function that will return the list of online players, this is set using CommandHandler.RegisterCommand()
-	GetOnlinePlayersFunc func() *[]*fortress.Player
+	GetOnlinePlayersFunc func() []*fortress.Player
 }
 
 // The Execute function which calls GetOnlinePlayersFunc and formats the response
@@ -17,7 +17,7 @@ func (c *ListCommand) Execute(player *fortress.Player, args []string) (string, e
 	playerListString := " "
 	var i int = -1
 	var p *fortress.Player
-	for i, p = range *c.GetOnlinePlayersFunc() {
+	for i, p = range c.GetOnlinePlayersFunc() {
 		name := p.GetName()
 		if name == "" {
 			name = "no-name"

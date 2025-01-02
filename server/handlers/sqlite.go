@@ -9,7 +9,7 @@ import (
 )
 
 type SqliteHandler struct {
-	*sql.DB
+	db *sql.DB
 	*fortress.Logger
 }
 
@@ -27,7 +27,7 @@ func NewSqliteHandler(logger *fortress.Logger) *SqliteHandler {
 	}
 
 	handler.Logger = logger
-	handler.DB = db
+	handler.db = db
 	return handler
 }
 
@@ -43,7 +43,7 @@ func (h *SqliteHandler) InitializeDatabase() {
 	//		"'updated_at'	"
 	//		"'last_read'	"
 
-	stmt, err := h.Prepare("CREATE TABLE IF NOT EXISTS players (" +
+	stmt, err := h.db.Prepare("CREATE TABLE IF NOT EXISTS players (" +
 		"player_id	TEXT, " +
 		"google_id	TEXT, " +
 		"name TEXT, " +
@@ -83,7 +83,7 @@ func (h *SqliteHandler) LookupPlayerFromDb(f PlayerFilter) *fortress.Player {
 		sql = sql + sqlWhereName
 	}
 
-	rows, err := h.Query(sql)
+	rows, err := h.db.Query(sql)
 
 	if err != nil {
 		h.Fatal(err.Error())
@@ -126,7 +126,7 @@ func (h *SqliteHandler) LookupPlayerFromDb(f PlayerFilter) *fortress.Player {
 
 func (h *SqliteHandler) UpdatePlayerToDb(p *fortress.Player) {
 	// "UPDATE players set google_id = ?, name = ?, session_token = ?, avatar_url = ?, created_at = ?, updated_at = ?, last_read = ? WHERE player_id = ?"
-	stmt, err := h.Prepare("UPDATE players set google_id = ?, name = ?, session_token = ?, avatar_url = ?, created_at = ?, updated_at = ?, last_read = ? WHERE player_id = ?")
+	stmt, err := h.db.Prepare("UPDATE players set google_id = ?, name = ?, session_token = ?, avatar_url = ?, created_at = ?, updated_at = ?, last_read = ? WHERE player_id = ?")
 	if err != nil {
 		h.Fatal(err.Error())
 	}
@@ -149,7 +149,7 @@ func (h *SqliteHandler) UpdatePlayerToDb(p *fortress.Player) {
 
 func (h *SqliteHandler) CreateNewPlayerDbRecord(p *fortress.Player) {
 	// "INSERT INTO players (player_id, google_id, name, session_token, avatar_url, created_at, updated_at, last_read) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
-	stmt, _ := h.Prepare("INSERT INTO players (player_id, google_id, name, session_token, avatar_url, created_at, updated_at, last_read) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
+	stmt, _ := h.db.Prepare("INSERT INTO players (player_id, google_id, name, session_token, avatar_url, created_at, updated_at, last_read) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
 	stmt.Exec(p.GetPlayerId(), p.GetGoogleId(), p.GetName(), p.GetSessionToken(), p.GetAvatarUrl(), p.CreatedAt.Unix(), p.UpdatedAt.Unix(), p.LastRead.Unix())
 	defer stmt.Close()
 
@@ -159,4 +159,10 @@ func (h *SqliteHandler) CreateNewPlayerDbRecord(p *fortress.Player) {
 // TODO needs to be implemented - just check to see if it exists in the name column case-insensitive
 func (h *SqliteHandler) IsNameUnique(name string) bool {
 	return true
+}
+
+func (h *SqliteHandler) CloseDb() {
+	if err := h.db.Close(); err != nil {
+		h.Error(err.Error())
+	}
 }

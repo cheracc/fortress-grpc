@@ -131,6 +131,14 @@ func (p *Player) SetAvatarUrl(url string) {
 	p.Unlock()
 }
 
+func (p *Player) GetUpdatedAt() time.Time {
+	p.RLock()
+	updatedAt := p.UpdatedAt
+	p.RUnlock()
+	p.setAccessed()
+	return updatedAt
+}
+
 func (p *Player) GetCreatedAt() time.Time {
 	p.RLock()
 	createdAt := p.CreatedAt

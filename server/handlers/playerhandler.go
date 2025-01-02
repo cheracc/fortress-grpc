@@ -2,6 +2,8 @@ package handlers
 
 import (
 	"context"
+	"fmt"
+	"sync"
 	"time"
 
 	"github.com/cheracc/fortress-grpc"
@@ -9,21 +11,84 @@ import (
 	"github.com/google/uuid"
 )
 
+const (
+	dbSaveInterval = 1 * time.Second
+)
+
 type PlayerHandler struct {
 	fgrpc.UnimplementedPlayerServer
 	*SqliteHandler
 	*AuthHandler
 	*fortress.Logger
-	players []*fortress.Player
+	*OnlinePlayers
+}
+
+// OnlinePlayers contains a map struct of recently active players keyed by their playerId
+// The methods of OnlinePlayers are thread-safe
+type OnlinePlayers struct {
+	*sync.RWMutex
+	players map[string]*fortress.Player
+}
+
+func (o *OnlinePlayers) GetOnlinePlayers() []*fortress.Player {
+	onlinePlayers := make([]*fortress.Player, 0)
+
+	o.RLock()
+	for _, p := range o.players {
+		onlinePlayers = append(onlinePlayers, p)
+	}
+	o.RUnlock()
+	return onlinePlayers
+}
+func (o *OnlinePlayers) RemoveOnlinePlayer(playerId string) {
+	o.Lock()
+	delete(o.players, playerId)
+	o.Unlock()
+}
+func (o *OnlinePlayers) AddOnlinePlayer(player *fortress.Player) error {
+	if player == nil {
+		return fmt.Errorf("player passed to addonlineplayer is nil")
+	}
+	o.Lock()
+	o.players[player.GetPlayerId()] = player
+	o.Unlock()
+	return nil
+}
+func (o OnlinePlayers) IsOnline(filter PlayerFilter) bool {
+	o.RLock()
+	defer o.RUnlock()
+	_, found := o.players[filter.playerId]
+	if found {
+		return true
+	}
+	return o.GetOnlinePlayer(filter) != nil
+}
+
+// GetOnlinePlayer returns a reference to the Player object that matches any field in PlayerFilter,
+// it returns nil if there is no match. This function does not check the database.
+func (o *OnlinePlayers) GetOnlinePlayer(filter PlayerFilter) *fortress.Player {
+	o.RLock()
+	defer o.RUnlock()
+	for k, v := range o.players {
+		if k == filter.playerId || v.GetGoogleId() == filter.googleId || v.GetName() == filter.name {
+			return v
+		}
+	}
+	return nil
 }
 
 func NewPlayerHandler(sqliteHandler *SqliteHandler, logger *fortress.Logger) *PlayerHandler {
-	handler := &PlayerHandler{fgrpc.UnimplementedPlayerServer{}, sqliteHandler, nil, logger, []*fortress.Player{}}
+	handler := &PlayerHandler{
+		fgrpc.UnimplementedPlayerServer{},
+		sqliteHandler,
+		nil,
+		logger,
+		&OnlinePlayers{&sync.RWMutex{}, make(map[string]*fortress.Player)}}
 
 	go func() {
-		time.Sleep(1 * time.Minute)
+		time.Sleep(dbSaveInterval)
 		for {
-			handler.SaveAllPlayersToDb()
+			handler.saveModifiedPlayersToDb()
 			time.Sleep(time.Minute)
 		}
 	}()
@@ -48,10 +113,6 @@ func (h *PlayerHandler) GetPlayerData(ctx context.Context, playerInfo *fgrpc.Pla
 	return payload, nil
 }
 
-func (h *PlayerHandler) GetOnlinePlayers() *[]*fortress.Player {
-	return &h.players
-}
-
 // this error gets passed back to the user/client
 func (h *PlayerHandler) RenamePlayer(player *fortress.Player, newName string) error {
 	if !h.SqliteHandler.IsNameUnique(newName) {
@@ -68,63 +129,46 @@ func (h *PlayerHandler) RenamePlayer(player *fortress.Player, newName string) er
 // the sqlite database using the same filter. If it does not find a player, it creates a new one. If it either loaded from the database
 // or created it, it adds that player to onlinePlayers. it returns the player as well as whether that player was newly created
 func (h *PlayerHandler) GetPlayer(filter PlayerFilter, checkDatabase bool) (*fortress.Player, bool) {
-	for _, p := range *h.GetOnlinePlayers() {
-		if p.GetPlayerId() == filter.playerId || p.GetName() == filter.name || p.GetGoogleId() == filter.googleId {
-			return p, false
-		}
+	p := h.GetOnlinePlayer(filter)
+	if p != nil {
+		return p, false
 	}
+
 	// check the db
 	if checkDatabase {
 		p := h.SqliteHandler.LookupPlayerFromDb(filter)
 		if p != nil {
-			h.updateOnlinePlayer(p)
+			h.AddOnlinePlayer(p)
 			h.Logf("Loaded player %s(%s) from database.", p.GetName(), p.GetPlayerId())
 			return p, false
 		}
 	}
 
 	//not found, create new
-	p := fortress.NewPlayer()
+	p = fortress.NewPlayer()
 
 	if _, err := uuid.Parse(filter.playerId); err == nil { // if the requested id was a uuid, set the new player to that id, otherwise, keep the generated one
 		p.SetPlayerId(filter.playerId)
 	}
-	h.registerNewPlayer(p, true)
+	h.registerNewPlayer(p)
 	h.Logf("Created a new player with ID %s", p.GetPlayerId())
 	return p, true
 
 }
 
-func (h *PlayerHandler) registerNewPlayer(player *fortress.Player, saveToDb bool) {
-	h.updateOnlinePlayer(player)
-	if saveToDb {
-		h.SqliteHandler.CreateNewPlayerDbRecord(player)
-	}
+// registerNewPlayer adds the given player to onlinePlayers and saves them to db
+func (h *PlayerHandler) registerNewPlayer(player *fortress.Player) {
+	h.AddOnlinePlayer(player)
+	h.SqliteHandler.CreateNewPlayerDbRecord(player)
 }
 
-func (h *PlayerHandler) SaveAllPlayersToDb() {
-	for _, p := range *h.GetOnlinePlayers() {
-		if time.Since(p.UpdatedAt) < 1*time.Minute {
+// saveUpdatedPlayersToDb saves any player that has been modified in the last minute to the database
+func (h *PlayerHandler) saveModifiedPlayersToDb() {
+	for _, p := range h.GetOnlinePlayers() {
+		if time.Since(p.GetUpdatedAt()) < dbSaveInterval {
 			h.SqliteHandler.UpdatePlayerToDb(p)
 		}
 	}
-}
-
-func (h *PlayerHandler) updateOnlinePlayer(player *fortress.Player) {
-	var toRemove int = -1
-	for i, p := range h.players {
-		if p.GetPlayerId() == player.GetPlayerId() {
-			toRemove = i
-			break
-		}
-	}
-	if toRemove >= 0 {
-		h.players = append(h.players[:toRemove], h.players[toRemove+1:]...) // remove the player if it was found
-		h.Logf("Updating online player: %s(%s)", player.GetName(), player.GetPlayerId())
-	} else {
-		h.Logf("Loaded player: %s(%s)", player.GetName(), player.GetPlayerId())
-	}
-	h.players = append(h.players, player)
 }
 
 // GetPlayerNameFromId returns the name associated with the given playerId, optionally checking the database. Returns "" if no player is found

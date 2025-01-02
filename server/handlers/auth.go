@@ -5,6 +5,7 @@ import (
 	"crypto/ecdsa"
 	"crypto/elliptic"
 	"crypto/rand"
+	"sync"
 	"time"
 
 	"github.com/cheracc/fortress-grpc"
@@ -15,12 +16,12 @@ import (
 
 // The AuthHandler handles all user authorizations. It holds a reference to the PlayerHandler
 type AuthHandler struct {
-	fgrpc.UnimplementedAuthServer                  // the gRPC server that accepts auth requests
-	*PlayerHandler                                 // a pointer to the PlayerHandler to lookup players
-	OauthHandler                                   // a separate handler to deal with oAuth stuff
-	*fortress.Logger                               // the logger
-	*ecdsa.PrivateKey                              // the private key used for signing auth tokens
-	authenticatingPlayers         map[string]*Auth // the players that are currently in the process of authenticating
+	fgrpc.UnimplementedAuthServer                   // the gRPC server that accepts auth requests
+	*PlayerHandler                                  // a pointer to the PlayerHandler to lookup players
+	OauthHandler                                    // a separate handler to deal with oAuth stuff
+	*fortress.Logger                                // the logger
+	key                           *ecdsa.PrivateKey // the private key used for signing auth tokens
+	AuthenticatingPlayers                           // the players that are currently in the process of authenticating
 }
 
 // JwtTokenClaims contains the data that we save on the session token
@@ -36,6 +37,27 @@ type Auth struct {
 	sessionToken string
 	avatarUrl    string
 	ipAddress    string
+}
+
+type AuthenticatingPlayers struct {
+	*sync.RWMutex
+	auths map[string]*Auth
+}
+
+func (a *AuthenticatingPlayers) AddAuth(oauthTokenString string, auth *Auth) {
+	a.Lock()
+	a.auths[oauthTokenString] = auth
+	a.Unlock()
+}
+func (a *AuthenticatingPlayers) GetAuth(oauthTokenString string) *Auth {
+	a.RLock()
+	defer a.RUnlock()
+	return a.auths[oauthTokenString]
+}
+func (a *AuthenticatingPlayers) DeleteAuth(oauthTokenString string) {
+	a.Lock()
+	delete(a.auths, oauthTokenString)
+	a.Unlock()
 }
 
 // isComplete returns whether the Auth is fully populated
@@ -57,18 +79,22 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 		authInfo.LoginURL, state = h.OauthHandler.GenerateLoginURL()
 		authInfo.SessionToken = state
 
-		h.authenticatingPlayers[state] = &Auth{oauthState: state, ipAddress: ip.Addr.String()}
+		h.AddAuth(state, &Auth{
+			oauthState: state,
+			ipAddress:  ip.Addr.String()})
 		return &authInfo, nil
 	}
 
 	if len(receivedSessionToken) < 40 { // this is an oauthstate token, this user is in the process of authenticating
-		auth := h.authenticatingPlayers[receivedSessionToken]
+		auth := h.GetAuth(receivedSessionToken)
 		if auth == nil { // this player had an auth token, but we have no record of it. it may be very old. just send them a new one and a link
 			var state string
 			authInfo.LoginURL, state = h.OauthHandler.GenerateLoginURL()
 			authInfo.SessionToken = state
 
-			h.authenticatingPlayers[state] = &Auth{oauthState: state, ipAddress: ip.Addr.String()}
+			h.AddAuth(state, &Auth{
+				oauthState: state,
+				ipAddress:  ip.Addr.String()})
 			return &authInfo, nil
 		}
 		if auth.isComplete() { // this authorization is complete (logged in with google). load their player and send them a session token
@@ -79,7 +105,7 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 			authInfo.SessionToken = auth.sessionToken
 			authInfo.LoginURL = ""
 
-			h.authenticatingPlayers[auth.oauthState] = nil // remove their auth
+			h.DeleteAuth(auth.oauthState) // remove their auth
 			return &authInfo, nil
 		}
 		// from here they are still authenticating, just send their same info back
@@ -107,7 +133,9 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 		authInfo.LoginURL, state = h.GenerateLoginURL()
 		authInfo.SessionToken = state
 
-		h.authenticatingPlayers[state] = &Auth{oauthState: state, ipAddress: ip.Addr.String()}
+		h.AddAuth(state, &Auth{
+			oauthState: state,
+			ipAddress:  ip.Addr.String()})
 		return &authInfo, nil
 	}
 }
@@ -116,7 +144,13 @@ func (h *AuthHandler) Authorize(ctx context.Context, playerInfo *fgrpc.PlayerInf
 func NewAuthHandler(playerHandler *PlayerHandler, logger *fortress.Logger) *AuthHandler {
 	randomKey, _ := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
 
-	handler := &AuthHandler{fgrpc.UnimplementedAuthServer{}, playerHandler, NewOauthHandler(logger), logger, randomKey, make(map[string]*Auth)}
+	handler := &AuthHandler{
+		fgrpc.UnimplementedAuthServer{},
+		playerHandler,
+		NewOauthHandler(logger),
+		logger,
+		randomKey,
+		AuthenticatingPlayers{&sync.RWMutex{}, make(map[string]*Auth)}}
 
 	handler.OauthHandler.StartListener(handler)
 
@@ -128,7 +162,7 @@ func NewAuthHandler(playerHandler *PlayerHandler, logger *fortress.Logger) *Auth
 func (h *AuthHandler) AuthorizePlayer(player *fortress.Player) error {
 	player.SetSessionToken(h.generateToken(player.GetPlayerId()))
 	h.PlayerHandler.SqliteHandler.UpdatePlayerToDb(player)
-	h.updateOnlinePlayer(player)
+	h.AddOnlinePlayer(player)
 
 	return nil
 }
@@ -146,11 +180,11 @@ func (h *AuthHandler) generateToken(playerId string) string {
 
 	token := jwt.NewWithClaims(jwt.SigningMethodES256, claims)
 
-	if h.PrivateKey == nil {
+	if h.key == nil {
 		h.Fatal("Tried to create new session token but there is no private key loaded.")
 	}
 
-	tokenString, err := token.SignedString(h.PrivateKey)
+	tokenString, err := token.SignedString(h.key)
 	if err != nil {
 		h.Logf("could not create new jwt for pid %s: %s", playerId, err)
 		return ""
@@ -161,7 +195,7 @@ func (h *AuthHandler) generateToken(playerId string) string {
 // verifySessionToken verifies the signature of the token and its expiry, and returns whether both are valid
 func (h *AuthHandler) verifySessionToken(token string) bool {
 	tkn, err := jwt.Parse(token, func(t *jwt.Token) (interface{}, error) {
-		return &h.PrivateKey.PublicKey, nil
+		return &h.key.PublicKey, nil
 	})
 
 	if err != nil {
@@ -170,7 +204,7 @@ func (h *AuthHandler) verifySessionToken(token string) bool {
 	}
 
 	if !tkn.Valid {
-		h.Errorf("session token %s is invalid (privatekey %s)", token, h.PrivateKey)
+		h.Errorf("session token %s is invalid (privatekey %s)", token, h.key)
 		return false
 	}
 	return true
@@ -187,7 +221,7 @@ func (h *AuthHandler) getTokenFromString(tokenString string) (*jwt.Token, *JwtTo
 	claims := &JwtTokenClaims{}
 
 	token, err := jwt.ParseWithClaims(tokenString, claims, func(token *jwt.Token) (any, error) {
-		return &h.PrivateKey.PublicKey, nil
+		return &h.key.PublicKey, nil
 	})
 	if err != nil {
 		h.Errorf("could not parse jwt token %s: %w", tokenString, err)
