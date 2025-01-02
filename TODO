@@ -1,5 +1,2 @@
 add commands: delete
-invalidate current session key if a player authorizes that is already online
-remove inactive players from onlineplayers
-add mutex to things like onlineplayers or other things that could be written concurrently
 close all streams on logout or connection errors

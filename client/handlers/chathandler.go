@@ -54,6 +54,7 @@ func (s *Chat) StartChannelMonitor() func() {
 			case <-ctx.Done():
 				// cancel this jawn
 				s.Log("Closing chat stream")
+				cancel()
 				return
 			default:
 				message, err := s.Recv()
@@ -92,4 +93,9 @@ func (c *Chat) JoinChat() {
 
 func (c *Chat) HasOpenChannel() bool {
 	return c.ChatStream != nil
+}
+
+func (c *Chat) CloseChatConnections() {
+	c.monitorCancelFunc() // stops the monitor that's watching the stream
+	c.ContextCancelFunc() // tells the server we're finished so it can release it
 }

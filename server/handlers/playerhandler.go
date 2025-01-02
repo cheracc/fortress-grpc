@@ -24,7 +24,7 @@ type PlayerHandler struct {
 	*OnlinePlayers
 }
 
-// OnlinePlayers contains a map struct of recently active players keyed by their playerId
+// OnlinePlayers contains a map of recently active players keyed by their playerId
 // The methods of OnlinePlayers are thread-safe
 type OnlinePlayers struct {
 	*sync.RWMutex
@@ -106,7 +106,7 @@ func NewPlayerHandler(sqliteHandler *SqliteHandler, logger *fortress.Logger) *Pl
 			handler.saveModifiedPlayersToDb()
 			removed := handler.PurgeInactives(inactiveTime)
 			if removed > 0 {
-				handler.Logf("Purged %d inactive players", removed)
+				handler.Logf("%d inactive players have been logged out", removed)
 			}
 			time.Sleep(dbSaveInterval)
 		}

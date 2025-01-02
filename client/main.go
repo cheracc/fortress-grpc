@@ -16,14 +16,13 @@ func main() {
 	logger := fortress.NewLogger()
 	remote := handlers.NewRemote(logger)
 	cmd := handlers.NewCommandHandler(logger)
-	chat := handlers.NewChatHandler(remote)
 
 	cmd.RegisterCommand(commands.LogoutCommand{LogoutFunc: remote.Logout})
-	cmd.RegisterCommand(commands.SayCommand{SayFunc: chat.SendChatMessageToServer})
+	cmd.RegisterCommand(commands.SayCommand{SayFunc: remote.SendChatMessageToServer})
 	cmd.RegisterCommand(commands.QuitCommand{})
 
 	go refreshTokenEveryMinute(remote)
-	go joinChatOnceLoggedIn(remote, chat)
+	go joinChatOnceLoggedIn(remote)
 
 	inputReader := bufio.NewReader(os.Stdin)
 	for {
@@ -46,12 +45,12 @@ func main() {
 	}
 }
 
-func joinChatOnceLoggedIn(remote *handlers.Remote, chat *handlers.Chat) {
+func joinChatOnceLoggedIn(remote *handlers.Remote) {
 	time.Sleep(10 * time.Second)
 	for {
 		if remote.HasSessionToken() {
-			if !chat.HasOpenChannel() {
-				chat.JoinChat()
+			if !remote.HasOpenChannel() {
+				remote.JoinChat()
 				continue
 			}
 			break

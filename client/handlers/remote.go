@@ -27,7 +27,7 @@ type Remote struct {
 	*fortress.Logger
 	// the player that's currently loaded
 	*fortress.Player
-	browserWindow *exec.Cmd
+	*Chat
 }
 
 // NewRemote constructs a new Remote with the given Logger
@@ -42,7 +42,9 @@ func NewRemote(logger *fortress.Logger) *Remote {
 	pc := fgrpc.NewPlayerClient(conn)
 	chat := fgrpc.NewChatClient(conn)
 
-	return &Remote{auth, cmd, pc, chat, logger, fortress.NewPlayer(), nil}
+	remote := &Remote{auth, cmd, pc, chat, logger, fortress.NewPlayer(), nil}
+	remote.Chat = NewChatHandler(remote)
+	return remote
 }
 
 // HasSessionToken returns whether there is an actual session token saved (this does not verify it)
@@ -103,8 +105,7 @@ func (r *Remote) Authorize() {
 		r.SetPlayerId(authInfo.PlayerID)
 		r.SetSessionToken(authInfo.SessionToken) // this should be an oauth token that we will return to confirm we are the same as who logged in with that link
 		r.ToConsolef("Use the following link to log in: %s\n\r", authInfo.LoginURL)
-		r.browserWindow = exec.Command("rundll32", "url.dll,FileProtocolHandler", authInfo.LoginURL)
-		r.browserWindow.Start()
+		exec.Command("rundll32", "url.dll,FileProtocolHandler", authInfo.LoginURL).Start()
 		return
 	}
 
@@ -118,7 +119,6 @@ func (r *Remote) Authorize() {
 			r.SetSessionToken(authInfo.SessionToken)
 			r.GetPlayerData()
 			r.Logf("Logged in as %s(%s)", r.GetName(), r.GetPlayerId())
-			r.browserWindow.Process.Kill()
 		}
 	}
 
@@ -133,5 +133,6 @@ func (r *Remote) Logout() {
 	r.SetPlayerId("")
 	r.SetName("")
 	r.SetSessionToken("")
+	r.CloseChatConnections()
 	r.Authorize()
 }

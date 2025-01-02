@@ -80,12 +80,19 @@ func (h *OauthHandler) OauthGoogleCallback(w http.ResponseWriter, r *http.Reques
 	auth.googleId = data.Id
 	auth.avatarUrl = data.Picture
 
-	// authorize this player to login
 	player, isNew := h.GetPlayer(PlayerFilter{googleId: data.Id}, true)
 
 	if isNew {
 		player.SetGoogleId(data.Id)
+	} else if h.IsOnline(PlayerFilter{playerId: player.GetPlayerId()}) {
+		// check if the current session key is valid
+		if h.IsValidToken(player.GetSessionToken()) { // player restarted or connected from another location
+			// find a way to invalidate the current Player (may need to record ip or add a refresh token)
+			fmt.Fprintf(w, "<html><body><h1>You are already logged in.</h1><br><h2>You will need to log out or wait for the old session to end.</h2></body></html>")
+			return
+		}
 	}
+
 	player.SetAvatarUrl(data.Picture)
 	h.AuthorizePlayer(player)
 	auth.sessionToken = player.GetSessionToken()
