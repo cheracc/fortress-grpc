@@ -6,6 +6,8 @@ import (
 	"time"
 
 	fgrpc "github.com/cheracc/fortress-grpc/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 const chatMonitorInterval = time.Second / 2
@@ -60,6 +62,10 @@ func (s *Chat) StartChannelMonitor() func() {
 					return
 				}
 				if err != nil {
+					if status.Code(err) == codes.Unavailable { // the server is offline, logout the user and exit
+						cancel()
+						s.Fatal("Server is offline, closing...")
+					}
 					s.Error(err.Error())
 				}
 				s.PostMessageToConsole(message)

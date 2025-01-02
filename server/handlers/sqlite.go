@@ -153,7 +153,7 @@ func (h *SqliteHandler) CreateNewPlayerDbRecord(p *fortress.Player) {
 	stmt.Exec(p.GetPlayerId(), p.GetGoogleId(), p.GetName(), p.GetSessionToken(), p.GetAvatarUrl(), p.CreatedAt.Unix(), p.UpdatedAt.Unix(), p.LastRead.Unix())
 	defer stmt.Close()
 
-	h.Logf("Added new database record for player %s(%s): %s", p.GetName(), p.GetPlayerId(), p)
+	h.Logf("Added new database record for player %s(%s)", p.GetName(), p.GetPlayerId())
 }
 
 // TODO needs to be implemented - just check to see if it exists in the name column case-insensitive

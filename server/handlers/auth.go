@@ -161,7 +161,6 @@ func NewAuthHandler(playerHandler *PlayerHandler, logger *fortress.Logger) *Auth
 // AuthorizePlayer sets a new fresh session token on the player and saves them to the database
 func (h *AuthHandler) AuthorizePlayer(player *fortress.Player) error {
 	player.SetSessionToken(h.generateToken(player.GetPlayerId()))
-	h.PlayerHandler.SqliteHandler.UpdatePlayerToDb(player)
 	h.AddOnlinePlayer(player)
 
 	return nil

@@ -43,17 +43,21 @@ func (c *ChatChannel) sendMessage(message string, playerName string) {
 }
 func (c *ChatChannel) removeMember(playerId string) {
 	toRemove := -1
-	c.RLock()
+	c.Lock()
 	for i, m := range c.members {
 		if m.playerId == playerId {
 			toRemove = i
+			m.closed = true
 			break
 		}
 	}
+	c.Unlock()
+
 	if toRemove >= 0 {
 		c.Lock()
 		c.members = slices.Delete(c.members, toRemove, toRemove+1)
 		c.Unlock()
+		c.sendMessage(fmt.Sprintf("%s has left chat", playerId), "SERVER")
 	}
 }
 
@@ -121,6 +125,7 @@ func (h *ChatHandler) PurgeInactives() {
 	}
 	h.RUnlock()
 	for _, id := range inactives {
+		h.Logf("Removing %s from chat for inactivity", id)
 		h.removeMember(id)
 	}
 }

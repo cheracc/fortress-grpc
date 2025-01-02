@@ -153,3 +153,13 @@ func (p *Player) SetCreatedAt(time time.Time) {
 	p.CreatedAt = time
 	p.Unlock()
 }
+
+// GetInactiveTime uses UpdatedAt to determine when the player was last 'active'.
+// Since session tokens need to be refreshed every x minutes, and the Player is updated when
+// it is refreshed, this gives a good approximation of how long this player was inactive
+func (p *Player) GetInactiveTime() time.Duration {
+	p.RLock()
+	timeSince := time.Since(p.UpdatedAt)
+	p.RUnlock()
+	return timeSince
+}

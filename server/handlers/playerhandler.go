@@ -12,7 +12,8 @@ import (
 )
 
 const (
-	dbSaveInterval = 1 * time.Second
+	dbSaveInterval = 1 * time.Minute
+	inactiveTime   = 3 * time.Minute
 )
 
 type PlayerHandler struct {
@@ -63,14 +64,28 @@ func (o OnlinePlayers) IsOnline(filter PlayerFilter) bool {
 	}
 	return o.GetOnlinePlayer(filter) != nil
 }
+func (o *OnlinePlayers) PurgeInactives(inactiveTime time.Duration) int {
+	inactives := []string{}
+	o.RLock()
+	for id, p := range o.players {
+		if p.GetInactiveTime() > inactiveTime {
+			inactives = append(inactives, id)
+		}
+	}
+	o.RUnlock()
+	for _, id := range inactives {
+		o.RemoveOnlinePlayer(id)
+	}
+	return len(inactives)
+}
 
 // GetOnlinePlayer returns a reference to the Player object that matches any field in PlayerFilter,
 // it returns nil if there is no match. This function does not check the database.
 func (o *OnlinePlayers) GetOnlinePlayer(filter PlayerFilter) *fortress.Player {
-	o.RLock()
-	defer o.RUnlock()
-	for k, v := range o.players {
-		if k == filter.playerId || v.GetGoogleId() == filter.googleId || v.GetName() == filter.name {
+	for _, v := range o.GetOnlinePlayers() {
+		if (filter.playerId != "" && v.GetPlayerId() == filter.playerId) ||
+			(filter.googleId != "" && v.GetGoogleId() == filter.googleId) ||
+			(filter.name != "" && v.GetName() == filter.name) {
 			return v
 		}
 	}
@@ -86,10 +101,14 @@ func NewPlayerHandler(sqliteHandler *SqliteHandler, logger *fortress.Logger) *Pl
 		&OnlinePlayers{&sync.RWMutex{}, make(map[string]*fortress.Player)}}
 
 	go func() {
-		time.Sleep(dbSaveInterval)
+		time.Sleep(20 * time.Second)
 		for {
 			handler.saveModifiedPlayersToDb()
-			time.Sleep(time.Minute)
+			removed := handler.PurgeInactives(inactiveTime)
+			if removed > 0 {
+				handler.Logf("Purged %d inactive players", removed)
+			}
+			time.Sleep(dbSaveInterval)
 		}
 	}()
 	return handler
@@ -165,7 +184,7 @@ func (h *PlayerHandler) registerNewPlayer(player *fortress.Player) {
 // saveUpdatedPlayersToDb saves any player that has been modified in the last minute to the database
 func (h *PlayerHandler) saveModifiedPlayersToDb() {
 	for _, p := range h.GetOnlinePlayers() {
-		if time.Since(p.GetUpdatedAt()) < dbSaveInterval {
+		if time.Since(p.GetUpdatedAt()) < dbSaveInterval+(10*time.Second) {
 			h.SqliteHandler.UpdatePlayerToDb(p)
 		}
 	}
